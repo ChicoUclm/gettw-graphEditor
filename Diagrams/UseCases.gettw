@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GETTWDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="gettw">
+  <elements xsi:type="Actor" text="Actor" color="white" editable="true"/>
+  <elements xsi:type="Package" text="Package" color="lightblue" textIsHeader="true"/>
+  <elements xsi:type="CustomShape" id_="Use case" shape="Ellipse" text="Use case" color="lightblue" editable="true"/>
+  <elements xsi:type="Rectangle" id_="System" text="System" color="lightgray" textIsHeader="true"/>
+  <elements xsi:type="CustomLink" id_="association"/>
+  <elements xsi:type="CustomLink" id_="inheritance" toArrowShape="Triangle" toArrowColor="white"/>
+  <elements xsi:type="CustomLink" id_="extends" toArrowShape="OpenTriangle" isDashed="true" text="extends"/>
+  <elements xsi:type="CustomLink" id_="includes" toArrowShape="OpenTriangle" isDashed="true" text="includes"/>
+</GETTWDiagram>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmftool:ToolRegistry
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:gmftool="http://www.eclipse.org/gmf/2005/ToolDefinition">
+  <palette
+      title="gettwPalette">
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Shapes"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rectangle"
+          description="Create new Rectangle">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/rectangle16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/rectangle64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Rounded Rectangle"
+          description="Create new Rounded Rectangle">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/rounded_rectangle16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/rounded_rectangle64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Ellipse"
+          description="Create new Ellipse">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/ellipse16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/ellipse64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Triangle"
+          description="Create new Triangle">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Triangle Down"
+          description="Create new Triangle Down">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle_down16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle_down64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Triangle Left"
+          description="Create new Triangle Left">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle_left16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle_left64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Triangle Right"
+          description="Create new Triangle Right">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle_right16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/triangle_right64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Diamond"
+          description="Create new Diamond">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/diamond16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/diamond64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:PaletteSeparator"/>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Actor"
+          description="Create new Actor">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/actor16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/actor64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Package"
+          description="Create new Package">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/package16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/package64.png"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Text"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Text"
+          description="Create new Text">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/text16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/text64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Text w Indexes"
+          description="Create new Text w Indexes">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/textindex16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/textindex64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Text w Superscript"
+          description="Create new Text w Superscript">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/superscript16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/superscript64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Text w Subscript"
+          description="Create new Text w Subscript">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/subscript16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/subscript64.png"/>
+      </tools>
+    </tools>
+    <tools
+        xsi:type="gmftool:ToolGroup"
+        title="Custom Elements"
+        collapsible="true">
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Picture"
+          description="Create new Picture">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/picture16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/picture64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Shape"
+          description="Create new Shape">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/shape16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/shape64.png"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Link"
+          description="Create new Link">
+        <smallIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/line16.png"
+            bundle="org.chico.uclm.gettw.figures"/>
+        <largeIcon
+            xsi:type="gmftool:BundleImage"
+            path="images/line64.png"/>
+      </tools>
+    </tools>
+  </palette>
+</gmftool:ToolRegistry>

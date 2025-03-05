@@ -1,0 +1,430 @@
+@gmf
+@namespace(uri="gettw", prefix="")
+package gettw;
+
+@gmf.diagram()
+class GETTWDiagram {
+	val GraphElement[*] elements;
+}
+
+abstract class GraphElement {
+	attr String id_;
+}
+
+
+// TEXT RELATED *************************************************************************************************************************************************************
+@gmf.node(figure="org.chico.uclm.gettw.figures.TextFigure", tool.name="Text",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/text64.png", tool.small.path="images/text16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Text extends GraphElement {
+	attr String text;
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.SuperscriptFigure", tool.name="Text w Superscript",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/superscript64.png", tool.small.path="images/superscript16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Superscript extends Text {
+	attr String superscript;
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.SubscriptFigure", tool.name="Text w Subscript",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/subscript64.png", tool.small.path="images/subscript16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Subscript extends Text {
+	attr String subscript;
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.TextIndexFigure", tool.name="Text w Indexes",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/textindex64.png", tool.small.path="images/textindex16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class TextIndex extends Text {
+	attr String subscript;
+	attr String superscript;
+}
+
+// SHAPES *******************************************************************************************************************************************************************
+// LIST OF GOJS SHAPES: https://gojs.net/latest/samples/shapes.html
+class Shape extends GraphElement {
+	attr String text;
+	attr Colors[1] color;
+	attr Colors[1] stroke;
+	attr Integer strokeWidth = 2;
+	attr Boolean editable = false;
+	attr Boolean textIsHeader = false;
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.RectangleFigure", tool.name="Rectangle",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/rectangle64.png", tool.small.path="images/rectangle16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Rectangle extends Shape {
+	readonly attr String shape = "Rectangle";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.RoundedRectangleFigure", tool.name="Rounded Rectangle",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/rounded_rectangle64.png", tool.small.path="images/rounded_rectangle16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class RoundedRectangle extends Shape {
+	readonly attr String shape = "RoundedRectangle";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.EllipseFigure", tool.name="Ellipse",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/ellipse64.png", tool.small.path="images/ellipse16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Ellipse extends Shape {
+	readonly attr String shape = "Ellipse";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.TriangleFigure", tool.name="Triangle",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/triangle64.png", tool.small.path="images/triangle16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Triangle extends Shape {
+	readonly attr String shape = "Triangle";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.DiamondFigure", tool.name="Diamond",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/diamond64.png", tool.small.path="images/diamond16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Diamond extends Shape {
+	readonly attr String shape = "Diamond";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.TriangleDownFigure", tool.name="Triangle Down",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/triangle_down64.png", tool.small.path="images/triangle_down16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class TriangleDown extends Shape {
+	readonly attr String shape = "TriangleDown";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.TriangleLeftFigure", tool.name="Triangle Left",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/triangle_left64.png", tool.small.path="images/triangle_left16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class TriangleLeft extends Shape {
+	readonly attr String shape = "TriangleLeft";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.TriangleRightFigure", tool.name="Triangle Right",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/triangle_right64.png", tool.small.path="images/triangle_right16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class TriangleRight extends Shape {
+	readonly attr String shape = "TriangleRight";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.ActorFigure", tool.name="Actor",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/actor64.png", tool.small.path="images/actor16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Actor extends Shape {
+	readonly attr String shape = "Actor";
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.PackageFigure", tool.name="Package",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/package64.png", tool.small.path="images/package16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Package extends Shape {
+	readonly attr String shape = "Package";
+}
+
+// LINKS ***********************************************************************************************************************************************************************
+class Link extends GraphElement {}
+
+
+
+// CUSTOM GRAPHICAL ELEMENTS ***************************************************************************************************************************************************
+@gmf.node(figure="org.chico.uclm.gettw.figures.PictureFigure", tool.name="Picture",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/picture64.png", tool.small.path="images/picture16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class Picture extends GraphElement {
+	attr String source_url; // it is just needed the name and file extension, e.g.: "circle1.jpg"
+	attr Integer width;
+	attr Integer height;
+	attr String text;
+}
+
+@gmf.node(figure="org.chico.uclm.gettw.figures.ShapeFigure", tool.name="Shape",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/shape64.png", tool.small.path="images/shape16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class CustomShape extends GraphElement {
+	attr Shapes[1] shape;
+	attr String text;
+	attr Colors[1] color;
+	attr Colors[1] stroke;
+	attr Integer strokeWidth = 2;
+	attr Boolean sup_sub_indexes = false;
+	attr String text_subscript;
+	attr String text_superscript;
+	attr Boolean editable = false;
+	attr Boolean textIsHeader = false;
+}
+
+// LIST OF GOJS ARROWHEADS: https://gojs.net/latest/samples/arrowheads.html
+@gmf.node(figure="org.chico.uclm.gettw.figures.LinkFigure", tool.name="Link",
+	tool.small.bundle="org.chico.uclm.gettw.figures", tool.large.path="images/line64.png", tool.small.path="images/line16.png",
+	label="id_", label.icon="false", label.placement="external", resizable="false", size="64,64")
+class CustomLink extends Link {
+	attr Colors[1] linkStrokeColor;
+	attr Integer linkStrokeWidth = 2;
+	attr ArrowHeads[1] fromArrowShape;
+	attr Colors[1] fromArrowColor;
+	attr Colors[1] fromArrowStrokeColor;
+	attr Integer fromArrowStrokeWidth = 2;
+	attr ArrowHeads[1] toArrowShape;
+	attr Colors[1] toArrowColor;
+	attr Colors[1] toArrowStrokeColor;
+	attr Integer toArrowStrokeWidth = 2;
+	attr Boolean isDashed = false;
+	attr String text;
+}
+
+
+// ENUMERATIONS ****************************************************************************************************************************************************************
+enum Shapes {
+	None;
+	Ellipse;
+	Rectangle;
+	Square;
+	Triangle;
+	Actor;
+	ACvoltageSource;
+	AndGate;
+	Arrow;
+	AsteriskLine;
+	BarH;
+	BarV;
+	Border;
+	Buffer;
+	Capacitor;
+	Card;
+	Chevron;
+	Circle;
+	CircleLine;
+	Clock;
+	Cloud;
+	Club;
+	Cone1;
+	Cone2;
+	CreateRequest;
+	Cube1;
+	Cube2;
+	Curve1;
+	Curve2;
+	Curve3;
+	Curve4;
+	Cylinder1;
+	Cylinder2;
+	Cylinder3;
+	Cylinder4;
+	Database;
+	DataStorage;
+	DCvoltageSource;
+	Decagon;	
+	Diamond;
+	Diode;
+	DiskStorage;
+	Display;
+	DividedEvent;
+	DividedProcess;
+	Document;
+	Dodecagon;
+	DoubleArrow;
+	DoubleEndArrow;
+	ExternalOrganization;
+	ExternalProcess;
+	EightPointedStar;
+	EightPointedBurst;
+	File;
+	FivePointedBurst;
+	FivePointedStar;
+	Fragile;
+	FramedRectangle;
+	GenderMale;
+	GenderFemale;
+	Ground;
+	Heart;
+	Hexagon;
+	Heptagon;
+	HourGlass;
+	IBeamArrow;
+	Inductor;
+	InternalStorage;
+	Interrupt;
+	Inverter;
+	Junction;
+	Lightning;
+	Line1;
+	Line2;
+	LinedDocument;
+	LineH;
+	LineV;
+	LogicAnd;
+	LogicFalsity;
+	LogicForAll;
+	LogicIff;
+	LogicImplies;
+	LogicIntersect;
+	LogicIsDefinedAs;
+	LogicNot;
+	LogicOr;
+	LogicThereExists;
+	LogicTruth;
+	LogicUnion;
+	LogicXor;
+	MinusLine;
+	MultiDocument;
+	MultiProcess;
+	NandGate;
+	NinePointedBurst;
+	NinePointedStar;
+	Nonagon;
+	NorGate;
+	NotAllowed;
+	Octagon;
+	OrGate;	
+	Parallelogram;
+	Peace;
+	Pentagon;
+	Pie;
+	PiePiece;
+	PlusLine;
+	Pointer;
+	Prism1;
+	Prism2;
+	Procedure;
+	Process;
+	Pyramid1;
+	Pyramid2;
+	Resistor;
+	Ring;
+	RoundedPointer;
+	RoundedRectangle;
+	SevenPointedBurst;
+	SevenPointedStar;
+	SixPointedBurst;
+	SixPointedStar;
+	Spade;
+	SplitEndArrow;
+	StopSign;
+	SquareArrow;
+	TenPointedBurst;
+	TenPointedStar;
+	ThickCross;
+	ThickX;
+	ThinCross;
+	ThinX;
+	TriangleRight;
+	TriangleDown;
+	TriangleLeft;
+	Trapezoid;
+	YinYang;
+	XLine;
+	XnorGate;
+	XorGate;
+}
+
+enum ArrowHeads {
+	None;
+	Standard;
+	AccelerationArrow;
+	BackSlash;
+	Backward;
+	BackwardBoomerang;
+	BackwardCircleFork;
+	BackwardCircleLineFork;
+	BackwardDoubleFeathers;
+	BackwardFeather;
+	BackwardFork;
+	BackwardHalfTriangleBottom;
+	BackwardHalfTriangleTop;
+	BackwardLineFork;
+	BackwardOpenTriangle;
+	BackwardOppenTriangleBottom;
+	BackwardOpenTriangleLine;
+	BackwardOpenTriangleTop;
+	BackwardSemiCircle;
+	BackwardTriangle;
+	BackwardTripleFeathers;
+	BackwardV;
+	BigEndArrow;
+	Block;
+	Boomerang;
+	BoxArrow;
+	Chevron;
+	Circle;
+	CircleEndedArrow;
+	CircleFork;
+	CircleLine;
+	CircleLineFork;
+	ConcaveTailArrow;
+	Diamond;
+	DiamondCircle;
+	DoubleBackSlash;
+	DoubleFeathers;
+	DoubleForwardSlash;
+	DoubleLine;
+	DoubleLineCircle;
+	DoubleTriangle;
+	DynamicWidthArrow;
+	EquilibriumArrow;
+	FastForward;
+	Feather;
+	Fork;	
+	ForwardSemiCircle;
+	ForwardSlack;
+	HalfArrowTop;
+	HalfArrowBottom;
+	HalfTriangleBottom;
+	HalfTriangleTop;
+	Kite;
+	Line;
+	LineCircle;
+	LineFork;
+	NormalArrow;
+	OpenRightTriangleTop;
+	OpenRightTriangleBottom;
+	OpenTriangle;
+	OpenTriangleLine;
+	OpenTriangleTop;
+	OpenTriangleBottom;
+	OpposingDirectionDoubleArrow;
+	PartialDoubleTriangle;
+	PentagonArrow;
+	PlusCircle;
+	RoundedTriangle;
+	SidewaysV;
+	SimpleArrow;
+	StretchedDiamond;
+	StretchedChevron;
+	TailedNormalArrow;
+	Triangle;
+	TriangleLine;
+	TripleBackSlash;
+	TripleFeathers;
+	TripleForwardSlash;
+	TripleLine;
+	TripleLineCircle;
+	X;
+}
+
+enum Colors {
+	black;
+	blue;
+	lightblue;
+	darkblue;
+	gray;
+	lightgray;
+	darkgray;
+	green;
+	lightgreen;
+	darkgreen;
+	orange;
+	lightorange;
+	darkorange;
+	pink;
+	purple;
+	red;
+	lightred;
+	darkred;
+	transparent;
+	yellow;
+	lightyellow;
+	darkyellow;
+	white;
+}

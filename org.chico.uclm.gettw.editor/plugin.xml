@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated gettw -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="gettw.presentation.GettwModelWizardID"
+            name="%_UI_GettwModelWizard_label"
+            class="gettw.presentation.GettwModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GettwModelFile.gif">
+         <description>%_UI_GettwModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated gettw -->
+      <editor
+            id="gettw.presentation.GettwEditorID"
+            name="%_UI_GettwEditor_label"
+            icon="icons/full/obj16/GettwModelFile.gif"
+            extensions="gettw"
+            class="gettw.presentation.GettwEditor"
+            contributorClass="gettw.presentation.GettwActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

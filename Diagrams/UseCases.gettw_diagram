@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="gettw" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_SqPw8DhNEe-2dZiONYzc7A" type="Gettw" name="UseCases.gettw_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_4otJwDiQEe-AH9E9Tzb_AQ" type="2016" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_4otJwjiQEe-AH9E9Tzb_AQ" type="5016">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_4otJwziQEe-AH9E9Tzb_AQ" x="18" y="72"/>
+    </children>
+    <element xmi:type="Actor" href="UseCases.gettw#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4otJwTiQEe-AH9E9Tzb_AQ" x="125" y="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_9zho0DiQEe-AH9E9Tzb_AQ" type="2017" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_9ziP4DiQEe-AH9E9Tzb_AQ" type="5017">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_9ziP4TiQEe-AH9E9Tzb_AQ" x="15" y="72"/>
+    </children>
+    <element xmi:type="Package" href="UseCases.gettw#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9zho0TiQEe-AH9E9Tzb_AQ" x="245" y="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Jwl3wDiREe-AH9E9Tzb_AQ" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Jwl3wjiREe-AH9E9Tzb_AQ" type="5001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Jwl3wziREe-AH9E9Tzb_AQ" y="5"/>
+    </children>
+    <element xmi:type="CustomShape" href="UseCases.gettw#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Jwl3wTiREe-AH9E9Tzb_AQ" x="455" y="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Vy-rkDiREe-AH9E9Tzb_AQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Vy_SoDiREe-AH9E9Tzb_AQ" type="5004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Vy_SoTiREe-AH9E9Tzb_AQ" x="10" y="72"/>
+    </children>
+    <element xmi:type="Rectangle" href="UseCases.gettw#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Vy-rkTiREe-AH9E9Tzb_AQ" x="350" y="105"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_c3vu0DiREe-AH9E9Tzb_AQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_c3wV4DiREe-AH9E9Tzb_AQ" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_c3wV4TiREe-AH9E9Tzb_AQ" x="5" y="72"/>
+    </children>
+    <element xmi:type="CustomLink" href="UseCases.gettw#//@elements.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_c3vu0TiREe-AH9E9Tzb_AQ" x="295" y="265"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_dMeosDiREe-AH9E9Tzb_AQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dMeosjiREe-AH9E9Tzb_AQ" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dMeosziREe-AH9E9Tzb_AQ" y="72"/>
+    </children>
+    <element xmi:type="CustomLink" href="UseCases.gettw#//@elements.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dMeosTiREe-AH9E9Tzb_AQ" x="415" y="265"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_db6y4DiREe-AH9E9Tzb_AQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_db6y4jiREe-AH9E9Tzb_AQ" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_db6y4ziREe-AH9E9Tzb_AQ" x="15" y="72"/>
+    </children>
+    <element xmi:type="CustomLink" href="UseCases.gettw#//@elements.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_db6y4TiREe-AH9E9Tzb_AQ" x="530" y="265"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_dpy20DiREe-AH9E9Tzb_AQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dpy20jiREe-AH9E9Tzb_AQ" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dpy20ziREe-AH9E9Tzb_AQ" x="15" y="72"/>
+    </children>
+    <element xmi:type="CustomLink" href="UseCases.gettw#//@elements.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_dpy20TiREe-AH9E9Tzb_AQ" x="655" y="265"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_SqPw8ThNEe-2dZiONYzc7A"/>
+  <element xmi:type="GETTWDiagram" href="UseCases.gettw#/"/>
+</notation:Diagram>

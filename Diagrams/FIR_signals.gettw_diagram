@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="gettw" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmi:id="_QHT6IDhNEe-2dZiONYzc7A" type="Gettw" name="FIR_signals.gettw_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_wtYrQDiLEe-CpI0iKxKyKw" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wtYrQjiLEe-CpI0iKxKyKw" type="5001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wtYrQziLEe-CpI0iKxKyKw" x="25" y="72"/>
+    </children>
+    <element xmi:type="CustomShape" href="FIR_signals.gettw#//@elements.0"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wtYrQTiLEe-CpI0iKxKyKw" x="80" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_jZ9Q4DiMEe-CpI0iKxKyKw" type="2001" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_jZ9Q4jiMEe-CpI0iKxKyKw" type="5001">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_jZ9Q4ziMEe-CpI0iKxKyKw" y="5"/>
+    </children>
+    <element xmi:type="CustomShape" href="FIR_signals.gettw#//@elements.1"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jZ9Q4TiMEe-CpI0iKxKyKw" x="170" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_wedpADiMEe-CpI0iKxKyKw" type="2015" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_wedpAjiMEe-CpI0iKxKyKw" type="5015">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_wedpAziMEe-CpI0iKxKyKw" y="5"/>
+    </children>
+    <element xmi:type="TriangleRight" href="FIR_signals.gettw#//@elements.2"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wedpATiMEe-CpI0iKxKyKw" x="285" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_5IjrUDiMEe-CpI0iKxKyKw" type="2021" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_5IjrUjiMEe-CpI0iKxKyKw" type="5021">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_5IjrUziMEe-CpI0iKxKyKw" y="5"/>
+    </children>
+    <element xmi:type="Text" href="FIR_signals.gettw#//@elements.3"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5IjrUTiMEe-CpI0iKxKyKw" x="385" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_8OQ4ADiMEe-CpI0iKxKyKw" type="2021" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8OQ4AjiMEe-CpI0iKxKyKw" type="5021">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_8OQ4AziMEe-CpI0iKxKyKw" x="15" y="72"/>
+    </children>
+    <element xmi:type="Text" href="FIR_signals.gettw#//@elements.4"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8OQ4ATiMEe-CpI0iKxKyKw" x="495" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="__rRxcDiMEe-CpI0iKxKyKw" type="2021" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="__rRxcjiMEe-CpI0iKxKyKw" type="5021">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="__rRxcziMEe-CpI0iKxKyKw" x="20" y="72"/>
+    </children>
+    <element xmi:type="Text" href="FIR_signals.gettw#//@elements.5"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__rRxcTiMEe-CpI0iKxKyKw" x="610" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Dnw1IDiNEe-CpI0iKxKyKw" type="2021" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Dnw1IjiNEe-CpI0iKxKyKw" type="5021">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Dnw1IziNEe-CpI0iKxKyKw" x="20" y="72"/>
+    </children>
+    <element xmi:type="Text" href="FIR_signals.gettw#//@elements.6"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dnw1ITiNEe-CpI0iKxKyKw" x="710" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Hkd7QDiNEe-CpI0iKxKyKw" type="2019" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Hkd7QjiNEe-CpI0iKxKyKw" type="5019">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Hkd7QziNEe-CpI0iKxKyKw" y="5"/>
+    </children>
+    <element xmi:type="Subscript" href="FIR_signals.gettw#//@elements.7"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Hkd7QTiNEe-CpI0iKxKyKw" x="825" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_LAD4YDiNEe-CpI0iKxKyKw" type="2019" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_LAD4YjiNEe-CpI0iKxKyKw" type="5019">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_LAD4YziNEe-CpI0iKxKyKw" y="5"/>
+    </children>
+    <element xmi:type="Subscript" href="FIR_signals.gettw#//@elements.8"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LAD4YTiNEe-CpI0iKxKyKw" x="920" y="115"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_PF6TcDiNEe-CpI0iKxKyKw" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_PF6TcjiNEe-CpI0iKxKyKw" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_PF6TcziNEe-CpI0iKxKyKw" x="20" y="72"/>
+    </children>
+    <element xmi:type="CustomLink" href="FIR_signals.gettw#//@elements.9"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PF6TcTiNEe-CpI0iKxKyKw" x="345" y="290"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_T6DX4DiNEe-CpI0iKxKyKw" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_T6DX4jiNEe-CpI0iKxKyKw" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_T6DX4ziNEe-CpI0iKxKyKw" x="-8" y="72"/>
+    </children>
+    <element xmi:type="CustomLink" href="FIR_signals.gettw#//@elements.10"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_T6DX4TiNEe-CpI0iKxKyKw" x="470" y="290"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_gvtJwDiPEe-AH9E9Tzb_AQ" type="2002" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_gvtw0DiPEe-AH9E9Tzb_AQ" type="5002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_gvtw0TiPEe-AH9E9Tzb_AQ" y="5"/>
+    </children>
+    <element xmi:type="CustomLink" href="FIR_signals.gettw#//@elements.11"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gvtJwTiPEe-AH9E9Tzb_AQ" x="605" y="290"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_QHT6IThNEe-2dZiONYzc7A"/>
+  <element xmi:type="GETTWDiagram" href="FIR_signals.gettw#/"/>
+</notation:Diagram>

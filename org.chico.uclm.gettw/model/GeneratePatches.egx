@@ -1,0 +1,27 @@
+// Imports the EClass#getLabelPlacement() operation from Eugenia
+import "platform:/plugin/org.eclipse.epsilon.eugenia/transformations/ECoreUtil.eol";
+
+rule FixExternalLabelMargins
+	// apply this rule to all EClasses where...
+	transform c : ECore!EClass
+{
+	// ... the EClass is annotated with @gmf.node(label.placement="external")
+	guard: c.getLabelPlacement() == "external"
+	
+	// invoke the following EGL template on the EClass
+	template: "FixExternalLabelMargin.egl"
+	
+	// make the source directory and name of the node available to the template
+	parameters: Map { "srcDir" = getSourceDirectory(), "node" = c.name }
+	
+	// and save the generated text to the following .patch file
+	target : "FixExternalLabelMarginsFor" + c.name + ".patch"
+}
+
+// Determine source directory from GMF Gen model
+@cache
+operation getSourceDirectory() {
+	var genEditor = GmfGen!GenEditorGenerator.all.first;
+	return genEditor.pluginDirectory.substring(1) + "/" +
+			genEditor.packageNamePrefix.replace("\\.","/");
+}

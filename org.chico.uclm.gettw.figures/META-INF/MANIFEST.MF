@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Figures
+Bundle-SymbolicName: org.chico.uclm.gettw.figures
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.chico.uclm.gettw.figures
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Require-Bundle: org.eclipse.ui;bundle-version="3.200.0",
+ org.eclipse.core.runtime;bundle-version="3.24.0",
+ org.eclipse.draw2d,
+ org.eclipse.gmf.runtime.draw2d.ui;bundle-version="1.9.1"
+Export-Package: org.chico.uclm.gettw.figures

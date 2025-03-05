@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="gettw" nsURI="gettw" nsPrefix="">
+  <eAnnotations source="gmf"/>
+  <eClassifiers xsi:type="ecore:EClass" name="GETTWDiagram">
+    <eAnnotations source="gmf.diagram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//GraphElement" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GraphElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id_" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Text" eSuperTypes="#//GraphElement">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.TextFigure"/>
+      <details key="tool.name" value="Text"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/text64.png"/>
+      <details key="tool.small.path" value="images/text16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Superscript" eSuperTypes="#//Text">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.SuperscriptFigure"/>
+      <details key="tool.name" value="Text w Superscript"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/superscript64.png"/>
+      <details key="tool.small.path" value="images/superscript16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="superscript" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Subscript" eSuperTypes="#//Text">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.SubscriptFigure"/>
+      <details key="tool.name" value="Text w Subscript"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/subscript64.png"/>
+      <details key="tool.small.path" value="images/subscript16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subscript" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TextIndex" eSuperTypes="#//Text">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.TextIndexFigure"/>
+      <details key="tool.name" value="Text w Indexes"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/textindex64.png"/>
+      <details key="tool.small.path" value="images/textindex16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="subscript" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="superscript" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Shape" eSuperTypes="#//GraphElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" lowerBound="1" eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stroke" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strokeWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="editable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textIsHeader" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rectangle" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.RectangleFigure"/>
+      <details key="tool.name" value="Rectangle"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/rectangle64.png"/>
+      <details key="tool.small.path" value="images/rectangle16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="Rectangle"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RoundedRectangle" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.RoundedRectangleFigure"/>
+      <details key="tool.name" value="Rounded Rectangle"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/rounded_rectangle64.png"/>
+      <details key="tool.small.path" value="images/rounded_rectangle16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="RoundedRectangle"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Ellipse" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.EllipseFigure"/>
+      <details key="tool.name" value="Ellipse"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/ellipse64.png"/>
+      <details key="tool.small.path" value="images/ellipse16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="Ellipse"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Triangle" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.TriangleFigure"/>
+      <details key="tool.name" value="Triangle"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/triangle64.png"/>
+      <details key="tool.small.path" value="images/triangle16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="Triangle"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Diamond" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.DiamondFigure"/>
+      <details key="tool.name" value="Diamond"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/diamond64.png"/>
+      <details key="tool.small.path" value="images/diamond16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="Diamond"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TriangleDown" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.TriangleDownFigure"/>
+      <details key="tool.name" value="Triangle Down"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/triangle_down64.png"/>
+      <details key="tool.small.path" value="images/triangle_down16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="TriangleDown"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TriangleLeft" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.TriangleLeftFigure"/>
+      <details key="tool.name" value="Triangle Left"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/triangle_left64.png"/>
+      <details key="tool.small.path" value="images/triangle_left16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="TriangleLeft"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TriangleRight" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.TriangleRightFigure"/>
+      <details key="tool.name" value="Triangle Right"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/triangle_right64.png"/>
+      <details key="tool.small.path" value="images/triangle_right16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="TriangleRight"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Actor" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.ActorFigure"/>
+      <details key="tool.name" value="Actor"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/actor64.png"/>
+      <details key="tool.small.path" value="images/actor16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="Actor"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Package" eSuperTypes="#//Shape">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.PackageFigure"/>
+      <details key="tool.name" value="Package"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/package64.png"/>
+      <details key="tool.small.path" value="images/package16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false" defaultValueLiteral="Package"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Link" eSuperTypes="#//GraphElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Picture" eSuperTypes="#//GraphElement">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.PictureFigure"/>
+      <details key="tool.name" value="Picture"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/picture64.png"/>
+      <details key="tool.small.path" value="images/picture16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="source_url" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="height" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CustomShape" eSuperTypes="#//GraphElement">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.ShapeFigure"/>
+      <details key="tool.name" value="Shape"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/shape64.png"/>
+      <details key="tool.small.path" value="images/shape16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="shape" lowerBound="1" eType="#//Shapes"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="color" lowerBound="1" eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stroke" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strokeWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sup_sub_indexes" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text_subscript" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text_superscript" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="editable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="textIsHeader" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="CustomLink" eSuperTypes="#//Link">
+    <eAnnotations source="gmf.node">
+      <details key="figure" value="org.chico.uclm.gettw.figures.LinkFigure"/>
+      <details key="tool.name" value="Link"/>
+      <details key="tool.small.bundle" value="org.chico.uclm.gettw.figures"/>
+      <details key="tool.large.path" value="images/line64.png"/>
+      <details key="tool.small.path" value="images/line16.png"/>
+      <details key="label" value="id_"/>
+      <details key="label.icon" value="false"/>
+      <details key="label.placement" value="external"/>
+      <details key="resizable" value="false"/>
+      <details key="size" value="64,64"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="linkStrokeColor" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="linkStrokeWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromArrowShape" lowerBound="1"
+        eType="#//ArrowHeads"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromArrowColor" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromArrowStrokeColor" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fromArrowStrokeWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toArrowShape" lowerBound="1"
+        eType="#//ArrowHeads"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toArrowColor" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toArrowStrokeColor" lowerBound="1"
+        eType="#//Colors"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="toArrowStrokeWidth" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"
+        defaultValueLiteral="2"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isDashed" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject"
+        defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="text" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Shapes">
+    <eLiterals name="None"/>
+    <eLiterals name="Ellipse" value="1"/>
+    <eLiterals name="Rectangle" value="2"/>
+    <eLiterals name="Square" value="3"/>
+    <eLiterals name="Triangle" value="4"/>
+    <eLiterals name="Actor" value="5"/>
+    <eLiterals name="ACvoltageSource" value="6"/>
+    <eLiterals name="AndGate" value="7"/>
+    <eLiterals name="Arrow" value="8"/>
+    <eLiterals name="AsteriskLine" value="9"/>
+    <eLiterals name="BarH" value="10"/>
+    <eLiterals name="BarV" value="11"/>
+    <eLiterals name="Border" value="12"/>
+    <eLiterals name="Buffer" value="13"/>
+    <eLiterals name="Capacitor" value="14"/>
+    <eLiterals name="Card" value="15"/>
+    <eLiterals name="Chevron" value="16"/>
+    <eLiterals name="Circle" value="17"/>
+    <eLiterals name="CircleLine" value="18"/>
+    <eLiterals name="Clock" value="19"/>
+    <eLiterals name="Cloud" value="20"/>
+    <eLiterals name="Club" value="21"/>
+    <eLiterals name="Cone1" value="22"/>
+    <eLiterals name="Cone2" value="23"/>
+    <eLiterals name="CreateRequest" value="24"/>
+    <eLiterals name="Cube1" value="25"/>
+    <eLiterals name="Cube2" value="26"/>
+    <eLiterals name="Curve1" value="27"/>
+    <eLiterals name="Curve2" value="28"/>
+    <eLiterals name="Curve3" value="29"/>
+    <eLiterals name="Curve4" value="30"/>
+    <eLiterals name="Cylinder1" value="31"/>
+    <eLiterals name="Cylinder2" value="32"/>
+    <eLiterals name="Cylinder3" value="33"/>
+    <eLiterals name="Cylinder4" value="34"/>
+    <eLiterals name="Database" value="35"/>
+    <eLiterals name="DataStorage" value="36"/>
+    <eLiterals name="DCvoltageSource" value="37"/>
+    <eLiterals name="Decagon" value="38"/>
+    <eLiterals name="Diamond" value="39"/>
+    <eLiterals name="Diode" value="40"/>
+    <eLiterals name="DiskStorage" value="41"/>
+    <eLiterals name="Display" value="42"/>
+    <eLiterals name="DividedEvent" value="43"/>
+    <eLiterals name="DividedProcess" value="44"/>
+    <eLiterals name="Document" value="45"/>
+    <eLiterals name="Dodecagon" value="46"/>
+    <eLiterals name="DoubleArrow" value="47"/>
+    <eLiterals name="DoubleEndArrow" value="48"/>
+    <eLiterals name="ExternalOrganization" value="49"/>
+    <eLiterals name="ExternalProcess" value="50"/>
+    <eLiterals name="EightPointedStar" value="51"/>
+    <eLiterals name="EightPointedBurst" value="52"/>
+    <eLiterals name="File" value="53"/>
+    <eLiterals name="FivePointedBurst" value="54"/>
+    <eLiterals name="FivePointedStar" value="55"/>
+    <eLiterals name="Fragile" value="56"/>
+    <eLiterals name="FramedRectangle" value="57"/>
+    <eLiterals name="GenderMale" value="58"/>
+    <eLiterals name="GenderFemale" value="59"/>
+    <eLiterals name="Ground" value="60"/>
+    <eLiterals name="Heart" value="61"/>
+    <eLiterals name="Hexagon" value="62"/>
+    <eLiterals name="Heptagon" value="63"/>
+    <eLiterals name="HourGlass" value="64"/>
+    <eLiterals name="IBeamArrow" value="65"/>
+    <eLiterals name="Inductor" value="66"/>
+    <eLiterals name="InternalStorage" value="67"/>
+    <eLiterals name="Interrupt" value="68"/>
+    <eLiterals name="Inverter" value="69"/>
+    <eLiterals name="Junction" value="70"/>
+    <eLiterals name="Lightning" value="71"/>
+    <eLiterals name="Line1" value="72"/>
+    <eLiterals name="Line2" value="73"/>
+    <eLiterals name="LinedDocument" value="74"/>
+    <eLiterals name="LineH" value="75"/>
+    <eLiterals name="LineV" value="76"/>
+    <eLiterals name="LogicAnd" value="77"/>
+    <eLiterals name="LogicFalsity" value="78"/>
+    <eLiterals name="LogicForAll" value="79"/>
+    <eLiterals name="LogicIff" value="80"/>
+    <eLiterals name="LogicImplies" value="81"/>
+    <eLiterals name="LogicIntersect" value="82"/>
+    <eLiterals name="LogicIsDefinedAs" value="83"/>
+    <eLiterals name="LogicNot" value="84"/>
+    <eLiterals name="LogicOr" value="85"/>
+    <eLiterals name="LogicThereExists" value="86"/>
+    <eLiterals name="LogicTruth" value="87"/>
+    <eLiterals name="LogicUnion" value="88"/>
+    <eLiterals name="LogicXor" value="89"/>
+    <eLiterals name="MinusLine" value="90"/>
+    <eLiterals name="MultiDocument" value="91"/>
+    <eLiterals name="MultiProcess" value="92"/>
+    <eLiterals name="NandGate" value="93"/>
+    <eLiterals name="NinePointedBurst" value="94"/>
+    <eLiterals name="NinePointedStar" value="95"/>
+    <eLiterals name="Nonagon" value="96"/>
+    <eLiterals name="NorGate" value="97"/>
+    <eLiterals name="NotAllowed" value="98"/>
+    <eLiterals name="Octagon" value="99"/>
+    <eLiterals name="OrGate" value="100"/>
+    <eLiterals name="Parallelogram" value="101"/>
+    <eLiterals name="Peace" value="102"/>
+    <eLiterals name="Pentagon" value="103"/>
+    <eLiterals name="Pie" value="104"/>
+    <eLiterals name="PiePiece" value="105"/>
+    <eLiterals name="PlusLine" value="106"/>
+    <eLiterals name="Pointer" value="107"/>
+    <eLiterals name="Prism1" value="108"/>
+    <eLiterals name="Prism2" value="109"/>
+    <eLiterals name="Procedure" value="110"/>
+    <eLiterals name="Process" value="111"/>
+    <eLiterals name="Pyramid1" value="112"/>
+    <eLiterals name="Pyramid2" value="113"/>
+    <eLiterals name="Resistor" value="114"/>
+    <eLiterals name="Ring" value="115"/>
+    <eLiterals name="RoundedPointer" value="116"/>
+    <eLiterals name="RoundedRectangle" value="117"/>
+    <eLiterals name="SevenPointedBurst" value="118"/>
+    <eLiterals name="SevenPointedStar" value="119"/>
+    <eLiterals name="SixPointedBurst" value="120"/>
+    <eLiterals name="SixPointedStar" value="121"/>
+    <eLiterals name="Spade" value="122"/>
+    <eLiterals name="SplitEndArrow" value="123"/>
+    <eLiterals name="StopSign" value="124"/>
+    <eLiterals name="SquareArrow" value="125"/>
+    <eLiterals name="TenPointedBurst" value="126"/>
+    <eLiterals name="TenPointedStar" value="127"/>
+    <eLiterals name="ThickCross" value="128"/>
+    <eLiterals name="ThickX" value="129"/>
+    <eLiterals name="ThinCross" value="130"/>
+    <eLiterals name="ThinX" value="131"/>
+    <eLiterals name="TriangleRight" value="132"/>
+    <eLiterals name="TriangleDown" value="133"/>
+    <eLiterals name="TriangleLeft" value="134"/>
+    <eLiterals name="Trapezoid" value="135"/>
+    <eLiterals name="YinYang" value="136"/>
+    <eLiterals name="XLine" value="137"/>
+    <eLiterals name="XnorGate" value="138"/>
+    <eLiterals name="XorGate" value="139"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ArrowHeads">
+    <eLiterals name="None"/>
+    <eLiterals name="Standard" value="1"/>
+    <eLiterals name="AccelerationArrow" value="2"/>
+    <eLiterals name="BackSlash" value="3"/>
+    <eLiterals name="Backward" value="4"/>
+    <eLiterals name="BackwardBoomerang" value="5"/>
+    <eLiterals name="BackwardCircleFork" value="6"/>
+    <eLiterals name="BackwardCircleLineFork" value="7"/>
+    <eLiterals name="BackwardDoubleFeathers" value="8"/>
+    <eLiterals name="BackwardFeather" value="9"/>
+    <eLiterals name="BackwardFork" value="10"/>
+    <eLiterals name="BackwardHalfTriangleBottom" value="11"/>
+    <eLiterals name="BackwardHalfTriangleTop" value="12"/>
+    <eLiterals name="BackwardLineFork" value="13"/>
+    <eLiterals name="BackwardOpenTriangle" value="14"/>
+    <eLiterals name="BackwardOppenTriangleBottom" value="15"/>
+    <eLiterals name="BackwardOpenTriangleLine" value="16"/>
+    <eLiterals name="BackwardOpenTriangleTop" value="17"/>
+    <eLiterals name="BackwardSemiCircle" value="18"/>
+    <eLiterals name="BackwardTriangle" value="19"/>
+    <eLiterals name="BackwardTripleFeathers" value="20"/>
+    <eLiterals name="BackwardV" value="21"/>
+    <eLiterals name="BigEndArrow" value="22"/>
+    <eLiterals name="Block" value="23"/>
+    <eLiterals name="Boomerang" value="24"/>
+    <eLiterals name="BoxArrow" value="25"/>
+    <eLiterals name="Chevron" value="26"/>
+    <eLiterals name="Circle" value="27"/>
+    <eLiterals name="CircleEndedArrow" value="28"/>
+    <eLiterals name="CircleFork" value="29"/>
+    <eLiterals name="CircleLine" value="30"/>
+    <eLiterals name="CircleLineFork" value="31"/>
+    <eLiterals name="ConcaveTailArrow" value="32"/>
+    <eLiterals name="Diamond" value="33"/>
+    <eLiterals name="DiamondCircle" value="34"/>
+    <eLiterals name="DoubleBackSlash" value="35"/>
+    <eLiterals name="DoubleFeathers" value="36"/>
+    <eLiterals name="DoubleForwardSlash" value="37"/>
+    <eLiterals name="DoubleLine" value="38"/>
+    <eLiterals name="DoubleLineCircle" value="39"/>
+    <eLiterals name="DoubleTriangle" value="40"/>
+    <eLiterals name="DynamicWidthArrow" value="41"/>
+    <eLiterals name="EquilibriumArrow" value="42"/>
+    <eLiterals name="FastForward" value="43"/>
+    <eLiterals name="Feather" value="44"/>
+    <eLiterals name="Fork" value="45"/>
+    <eLiterals name="ForwardSemiCircle" value="46"/>
+    <eLiterals name="ForwardSlack" value="47"/>
+    <eLiterals name="HalfArrowTop" value="48"/>
+    <eLiterals name="HalfArrowBottom" value="49"/>
+    <eLiterals name="HalfTriangleBottom" value="50"/>
+    <eLiterals name="HalfTriangleTop" value="51"/>
+    <eLiterals name="Kite" value="52"/>
+    <eLiterals name="Line" value="53"/>
+    <eLiterals name="LineCircle" value="54"/>
+    <eLiterals name="LineFork" value="55"/>
+    <eLiterals name="NormalArrow" value="56"/>
+    <eLiterals name="OpenRightTriangleTop" value="57"/>
+    <eLiterals name="OpenRightTriangleBottom" value="58"/>
+    <eLiterals name="OpenTriangle" value="59"/>
+    <eLiterals name="OpenTriangleLine" value="60"/>
+    <eLiterals name="OpenTriangleTop" value="61"/>
+    <eLiterals name="OpenTriangleBottom" value="62"/>
+    <eLiterals name="OpposingDirectionDoubleArrow" value="63"/>
+    <eLiterals name="PartialDoubleTriangle" value="64"/>
+    <eLiterals name="PentagonArrow" value="65"/>
+    <eLiterals name="PlusCircle" value="66"/>
+    <eLiterals name="RoundedTriangle" value="67"/>
+    <eLiterals name="SidewaysV" value="68"/>
+    <eLiterals name="SimpleArrow" value="69"/>
+    <eLiterals name="StretchedDiamond" value="70"/>
+    <eLiterals name="StretchedChevron" value="71"/>
+    <eLiterals name="TailedNormalArrow" value="72"/>
+    <eLiterals name="Triangle" value="73"/>
+    <eLiterals name="TriangleLine" value="74"/>
+    <eLiterals name="TripleBackSlash" value="75"/>
+    <eLiterals name="TripleFeathers" value="76"/>
+    <eLiterals name="TripleForwardSlash" value="77"/>
+    <eLiterals name="TripleLine" value="78"/>
+    <eLiterals name="TripleLineCircle" value="79"/>
+    <eLiterals name="X" value="80"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Colors">
+    <eLiterals name="black"/>
+    <eLiterals name="blue" value="1"/>
+    <eLiterals name="lightblue" value="2"/>
+    <eLiterals name="darkblue" value="3"/>
+    <eLiterals name="gray" value="4"/>
+    <eLiterals name="lightgray" value="5"/>
+    <eLiterals name="darkgray" value="6"/>
+    <eLiterals name="green" value="7"/>
+    <eLiterals name="lightgreen" value="8"/>
+    <eLiterals name="darkgreen" value="9"/>
+    <eLiterals name="orange" value="10"/>
+    <eLiterals name="lightorange" value="11"/>
+    <eLiterals name="darkorange" value="12"/>
+    <eLiterals name="pink" value="13"/>
+    <eLiterals name="purple" value="14"/>
+    <eLiterals name="red" value="15"/>
+    <eLiterals name="lightred" value="16"/>
+    <eLiterals name="darkred" value="17"/>
+    <eLiterals name="transparent" value="18"/>
+    <eLiterals name="yellow" value="19"/>
+    <eLiterals name="lightyellow" value="20"/>
+    <eLiterals name="darkyellow" value="21"/>
+    <eLiterals name="white" value="22"/>
+  </eClassifiers>
+</ecore:EPackage>

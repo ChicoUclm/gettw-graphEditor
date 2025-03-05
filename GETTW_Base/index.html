@@ -1,0 +1,69 @@
+<!-- Copyright 2024 by CHICO-GEAM Research Group. -->
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+		<meta name="description" content="Graphical editors to the web (GETTW)."/>
+		<link rel="stylesheet" media='screen and (min-width: 480px) and (max-width: 768px)' href="css/gettw_phone.css"/>
+		<link rel="stylesheet" media='screen and (min-width: 769px) and (max-width: 1200px)' href="css/gettw_tablet.css"/>
+		<link rel="stylesheet" media='screen and (min-width: 1201px) and (max-width: 3440px)' href="css/gettw_desktop.css"/>
+		<link rel="stylesheet" media='screen and (min-width: 3441px)' href="css/gettw_large.css"/>
+		<title>Auto-generated Graphical Editor</title>
+	</head>
+	
+	<body>
+		
+		<header>
+			<h1>Auto-generated Graphical Editor<h1>
+			<input type="file" id="fileInput" accept=".json" style="display: none;" />
+			<button class="myButton" onclick="selectFile()">Load</button>	
+			<button class="myButton" onclick="saveModelToFile()">Save</button>
+			<button class="myButton" onclick="printImage()">Print</button>
+			<button class="myButton" onclick="TogetherJS(this); return false;">Collaborate</button>
+		</header>
+						
+		<section id="content">
+			<div id="editor">
+				<div id="divDiagram">
+					<canvas tabindex="0">This text is displayed if your browser does not support the Canvas HTML element.</canvas>
+					<div style="position: absolute; overflow: auto; width: 1054px; height: 498px; z-index: 1;">
+						<div style="position: absolute; width: 1px; height: 1px;"></div>
+					</div>
+				</div>
+				
+				<div id="palettesContainer">
+					<div id="divRadar">
+						<canvas tabindex="2">This text is displayed if your browser does not support the Canvas HTML element.</canvas>
+						<div style="position: absolute; overflow: auto; z-index: 1;">
+							<div style="position: absolute; width: 1px; height: 1px;"></div>
+						</div>
+					</div>
+					
+					<div id="divPalette">
+						<canvas tabindex="1">This text is displayed if your browser does not support the Canvas HTML element.</canvas>
+						<div style="position: absolute; overflow: auto; z-index: 1;">
+							<div style="position: absolute; width: 1px; height: 1px;"></div>
+						</div>
+					</div>
+				</div>			
+			</div>
+		</section>
+		
+		<footer>
+			<p>Copyright © 2024 CHICO-GEAM Research Groups | All rights reserved</p>
+		</footer>
+		
+		<script>
+			// var TogetherJSConfig_autoStart = true; 
+			var TogetherJSConfig_suppressJoinConfirmation = false;
+			var TogetherJSConfig_dontShowClicks = ":not(canvas"
+			TogetherJSConfig_hubBase = "https://pickled-nervous-bar.glitch.me/";
+		</script>
+		<script src="https://togetherjs.com/togetherjs-min.js"></script>
+		<script src="gojs/go-debug.js"></script>
+		<script src="gojs/Figures.js"></script>
+		<script src="gojs/Arrowheads.js"></script>
+		<script src="js/gettw.js"></script>
+	</body>
+</html>		

@@ -1,0 +1,7 @@
+diff --git [%=srcDir%]/edit/parts/[%=node%]EditPart.java [%=srcDir%]/edit/parts/[%=node%]EditPart.java
+index 1e66957..b241750 100644
+--- [%=srcDir%]/edit/parts/[%=node%]EditPart.java
++++ [%=srcDir%]/edit/parts/[%=node%]EditPart.java
+@@ -132,1 +132,1 @@
+-			locator.setBorderItemOffset(new Dimension(-20, -20));
++			locator.setBorderItemOffset(new Dimension(-8, -8));

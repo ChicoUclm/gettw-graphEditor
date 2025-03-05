@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmfgen:GenEditorGenerator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgen="http://www.eclipse.org/gmf/2009/GenModel" copyrightText="">
+  <diagram visualID="1000" editPartClassName="GETTWDiagramEditPart" itemSemanticEditPolicyClassName="GETTWDiagramItemSemanticEditPolicy" canonicalEditPolicyClassName="GETTWDiagramCanonicalEditPolicy" iconProviderPriority="Low" validationProviderPriority="Low" validationEnabled="true" validationDecorators="true" liveValidationUIFeedback="true">
+    <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Diagram"/>
+    <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="GETTWDiagramEditHelper"/>
+    <viewmap xsi:type="gmfgen:FigureViewmap" figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
+    <containsShortcutsTo>gettw</containsShortcutsTo>
+    <shortcutsProvidedFor>gettw</shortcutsProvidedFor>
+    <domainDiagramElement href="gettw.genmodel#//gettw/GETTWDiagram"/>
+    <topLevelNodes visualID="2018" editPartClassName="SuperscriptEditPart" itemSemanticEditPolicyClassName="SuperscriptItemSemanticEditPolicy" canonicalEditPolicyClassName="SuperscriptCanonicalEditPolicy" graphicalNodeEditPolicyClassName="SuperscriptGraphicalNodeEditPolicy" createCommandClassName="SuperscriptCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SuperscriptEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SuperscriptFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SuperscriptFigure extends org.chico.uclm.gettw.figures.SuperscriptFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SuperscriptFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Superscript"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5018" editPartClassName="SuperscriptId_EditPart" itemSemanticEditPolicyClassName="SuperscriptId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SuperscriptLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SuperscriptLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SuperscriptLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Superscript&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2019" editPartClassName="SubscriptEditPart" itemSemanticEditPolicyClassName="SubscriptItemSemanticEditPolicy" canonicalEditPolicyClassName="SubscriptCanonicalEditPolicy" graphicalNodeEditPolicyClassName="SubscriptGraphicalNodeEditPolicy" createCommandClassName="SubscriptCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="SubscriptEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SubscriptFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SubscriptFigure extends org.chico.uclm.gettw.figures.SubscriptFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SubscriptFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Subscript"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5019" editPartClassName="SubscriptId_EditPart" itemSemanticEditPolicyClassName="SubscriptId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="SubscriptLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class SubscriptLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public SubscriptLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Subscript&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2020" editPartClassName="TextIndexEditPart" itemSemanticEditPolicyClassName="TextIndexItemSemanticEditPolicy" canonicalEditPolicyClassName="TextIndexCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TextIndexGraphicalNodeEditPolicy" createCommandClassName="TextIndexCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TextIndexEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TextIndexFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TextIndexFigure extends org.chico.uclm.gettw.figures.TextIndexFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TextIndexFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/TextIndex"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5020" editPartClassName="TextIndexId_EditPart" itemSemanticEditPolicyClassName="TextIndexId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TextIndexLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TextIndexLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TextIndexLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;TextIndex&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2004" editPartClassName="RectangleEditPart" itemSemanticEditPolicyClassName="RectangleItemSemanticEditPolicy" canonicalEditPolicyClassName="RectangleCanonicalEditPolicy" graphicalNodeEditPolicyClassName="RectangleGraphicalNodeEditPolicy" createCommandClassName="RectangleCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="RectangleEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RectangleFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RectangleFigure extends org.chico.uclm.gettw.figures.RectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RectangleFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Rectangle"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5004" editPartClassName="RectangleId_EditPart" itemSemanticEditPolicyClassName="RectangleId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RectangleLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RectangleLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RectangleLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Rectangle&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2005" editPartClassName="RoundedRectangleEditPart" itemSemanticEditPolicyClassName="RoundedRectangleItemSemanticEditPolicy" canonicalEditPolicyClassName="RoundedRectangleCanonicalEditPolicy" graphicalNodeEditPolicyClassName="RoundedRectangleGraphicalNodeEditPolicy" createCommandClassName="RoundedRectangleCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="RoundedRectangleEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RoundedRectangleFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RoundedRectangleFigure extends org.chico.uclm.gettw.figures.RoundedRectangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RoundedRectangleFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/RoundedRectangle"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5005" editPartClassName="RoundedRectangleId_EditPart" itemSemanticEditPolicyClassName="RoundedRectangleId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="RoundedRectangleLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class RoundedRectangleLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public RoundedRectangleLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;RoundedRectangle&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2010" editPartClassName="EllipseEditPart" itemSemanticEditPolicyClassName="EllipseItemSemanticEditPolicy" canonicalEditPolicyClassName="EllipseCanonicalEditPolicy" graphicalNodeEditPolicyClassName="EllipseGraphicalNodeEditPolicy" createCommandClassName="EllipseCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="EllipseEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="EllipseFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class EllipseFigure extends org.chico.uclm.gettw.figures.EllipseFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public EllipseFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Ellipse"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5010" editPartClassName="EllipseId_EditPart" itemSemanticEditPolicyClassName="EllipseId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="EllipseLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class EllipseLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public EllipseLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Ellipse&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2011" editPartClassName="TriangleEditPart" itemSemanticEditPolicyClassName="TriangleItemSemanticEditPolicy" canonicalEditPolicyClassName="TriangleCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TriangleGraphicalNodeEditPolicy" createCommandClassName="TriangleCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TriangleEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleFigure extends org.chico.uclm.gettw.figures.TriangleFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Triangle"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5011" editPartClassName="TriangleId_EditPart" itemSemanticEditPolicyClassName="TriangleId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Triangle&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2012" editPartClassName="DiamondEditPart" itemSemanticEditPolicyClassName="DiamondItemSemanticEditPolicy" canonicalEditPolicyClassName="DiamondCanonicalEditPolicy" graphicalNodeEditPolicyClassName="DiamondGraphicalNodeEditPolicy" createCommandClassName="DiamondCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="DiamondEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiamondFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiamondFigure extends org.chico.uclm.gettw.figures.DiamondFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiamondFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Diamond"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5012" editPartClassName="DiamondId_EditPart" itemSemanticEditPolicyClassName="DiamondId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="DiamondLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class DiamondLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public DiamondLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Diamond&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2013" editPartClassName="TriangleDownEditPart" itemSemanticEditPolicyClassName="TriangleDownItemSemanticEditPolicy" canonicalEditPolicyClassName="TriangleDownCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TriangleDownGraphicalNodeEditPolicy" createCommandClassName="TriangleDownCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TriangleDownEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleDownFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleDownFigure extends org.chico.uclm.gettw.figures.TriangleDownFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleDownFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/TriangleDown"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5013" editPartClassName="TriangleDownId_EditPart" itemSemanticEditPolicyClassName="TriangleDownId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleDownLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleDownLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleDownLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;TriangleDown&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2014" editPartClassName="TriangleLeftEditPart" itemSemanticEditPolicyClassName="TriangleLeftItemSemanticEditPolicy" canonicalEditPolicyClassName="TriangleLeftCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TriangleLeftGraphicalNodeEditPolicy" createCommandClassName="TriangleLeftCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TriangleLeftEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleLeftFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleLeftFigure extends org.chico.uclm.gettw.figures.TriangleLeftFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleLeftFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/TriangleLeft"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5014" editPartClassName="TriangleLeftId_EditPart" itemSemanticEditPolicyClassName="TriangleLeftId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleLeftLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleLeftLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleLeftLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;TriangleLeft&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2015" editPartClassName="TriangleRightEditPart" itemSemanticEditPolicyClassName="TriangleRightItemSemanticEditPolicy" canonicalEditPolicyClassName="TriangleRightCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TriangleRightGraphicalNodeEditPolicy" createCommandClassName="TriangleRightCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TriangleRightEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleRightFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleRightFigure extends org.chico.uclm.gettw.figures.TriangleRightFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleRightFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/TriangleRight"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5015" editPartClassName="TriangleRightId_EditPart" itemSemanticEditPolicyClassName="TriangleRightId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TriangleRightLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TriangleRightLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TriangleRightLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;TriangleRight&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2016" editPartClassName="ActorEditPart" itemSemanticEditPolicyClassName="ActorItemSemanticEditPolicy" canonicalEditPolicyClassName="ActorCanonicalEditPolicy" graphicalNodeEditPolicyClassName="ActorGraphicalNodeEditPolicy" createCommandClassName="ActorCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ActorEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ActorFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ActorFigure extends org.chico.uclm.gettw.figures.ActorFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ActorFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Actor"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5016" editPartClassName="ActorId_EditPart" itemSemanticEditPolicyClassName="ActorId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ActorLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ActorLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ActorLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Actor&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2017" editPartClassName="PackageEditPart" itemSemanticEditPolicyClassName="PackageItemSemanticEditPolicy" canonicalEditPolicyClassName="PackageCanonicalEditPolicy" graphicalNodeEditPolicyClassName="PackageGraphicalNodeEditPolicy" createCommandClassName="PackageCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="PackageEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="PackageFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PackageFigure extends org.chico.uclm.gettw.figures.PackageFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PackageFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Package"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5017" editPartClassName="PackageId_EditPart" itemSemanticEditPolicyClassName="PackageId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="PackageLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PackageLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PackageLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Package&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2002" editPartClassName="CustomLinkEditPart" itemSemanticEditPolicyClassName="CustomLinkItemSemanticEditPolicy" canonicalEditPolicyClassName="CustomLinkCanonicalEditPolicy" graphicalNodeEditPolicyClassName="CustomLinkGraphicalNodeEditPolicy" createCommandClassName="CustomLinkCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="CustomLinkEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CustomLinkFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CustomLinkFigure extends org.chico.uclm.gettw.figures.LinkFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CustomLinkFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/CustomLink"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5002" editPartClassName="CustomLinkId_EditPart" itemSemanticEditPolicyClassName="CustomLinkId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CustomLinkLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CustomLinkLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CustomLinkLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;CustomLink&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2021" editPartClassName="TextEditPart" itemSemanticEditPolicyClassName="TextItemSemanticEditPolicy" canonicalEditPolicyClassName="TextCanonicalEditPolicy" graphicalNodeEditPolicyClassName="TextGraphicalNodeEditPolicy" createCommandClassName="TextCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="TextEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TextFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TextFigure extends org.chico.uclm.gettw.figures.TextFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TextFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Text"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5021" editPartClassName="TextId_EditPart" itemSemanticEditPolicyClassName="TextId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="TextLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TextLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TextLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Text&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2003" editPartClassName="PictureEditPart" itemSemanticEditPolicyClassName="PictureItemSemanticEditPolicy" canonicalEditPolicyClassName="PictureCanonicalEditPolicy" graphicalNodeEditPolicyClassName="PictureGraphicalNodeEditPolicy" createCommandClassName="PictureCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="PictureEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="PictureFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PictureFigure extends org.chico.uclm.gettw.figures.PictureFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PictureFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/Picture"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5003" editPartClassName="PictureId_EditPart" itemSemanticEditPolicyClassName="PictureId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="PictureLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PictureLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PictureLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;Picture&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <topLevelNodes visualID="2001" editPartClassName="CustomShapeEditPart" itemSemanticEditPolicyClassName="CustomShapeItemSemanticEditPolicy" canonicalEditPolicyClassName="CustomShapeCanonicalEditPolicy" graphicalNodeEditPolicyClassName="CustomShapeGraphicalNodeEditPolicy" createCommandClassName="CustomShapeCreateCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="CustomShapeEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CustomShapeFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CustomShapeFigure extends org.chico.uclm.gettw.figures.ShapeFigure {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CustomShapeFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(64)&#xA;, getMapMode().DPtoLP(64)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:DefaultSizeAttributes" width="64" height="64"/>
+        <attributes xsi:type="gmfgen:ResizeConstraints" nonResizeHandles="31"/>
+      </viewmap>
+      <modelFacet>
+        <metaClass href="gettw.genmodel#//gettw/CustomShape"/>
+        <containmentMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+        <childMetaFeature href="gettw.genmodel#//gettw/GETTWDiagram/elements"/>
+      </modelFacet>
+      <labels xsi:type="gmfgen:GenExternalNodeLabel" visualID="5001" editPartClassName="CustomShapeId_EditPart" itemSemanticEditPolicyClassName="CustomShapeId_ItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="CustomShapeLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class CustomShapeLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public CustomShapeLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;CustomShape&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="gettw.genmodel#//gettw/GraphElement/id_"/>
+        </modelFacet>
+      </labels>
+    </topLevelNodes>
+    <palette>
+      <groups title="Shapes" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Rectangle" description="Create new Rectangle" largeIconPath="images/rectangle64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/rectangle16.png" genNodes="//@diagram/@topLevelNodes.3"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Rounded Rectangle" description="Create new Rounded Rectangle" largeIconPath="images/rounded_rectangle64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/rounded_rectangle16.png" genNodes="//@diagram/@topLevelNodes.4"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Ellipse" description="Create new Ellipse" largeIconPath="images/ellipse64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/ellipse16.png" genNodes="//@diagram/@topLevelNodes.5"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Triangle" description="Create new Triangle" largeIconPath="images/triangle64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/triangle16.png" genNodes="//@diagram/@topLevelNodes.6"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Triangle Down" description="Create new Triangle Down" largeIconPath="images/triangle_down64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/triangle_down16.png" genNodes="//@diagram/@topLevelNodes.8"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Triangle Left" description="Create new Triangle Left" largeIconPath="images/triangle_left64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/triangle_left16.png" genNodes="//@diagram/@topLevelNodes.9"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Triangle Right" description="Create new Triangle Right" largeIconPath="images/triangle_right64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/triangle_right16.png" genNodes="//@diagram/@topLevelNodes.10"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Diamond" description="Create new Diamond" largeIconPath="images/diamond64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/diamond16.png" genNodes="//@diagram/@topLevelNodes.7"/>
+        <entries xsi:type="gmfgen:Separator"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Actor" description="Create new Actor" largeIconPath="images/actor64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/actor16.png" genNodes="//@diagram/@topLevelNodes.11"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Package" description="Create new Package" largeIconPath="images/package64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/package16.png" genNodes="//@diagram/@topLevelNodes.12"/>
+      </groups>
+      <groups title="Text" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Text" description="Create new Text" largeIconPath="images/text64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/text16.png" genNodes="//@diagram/@topLevelNodes.14"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Text w Indexes" description="Create new Text w Indexes" largeIconPath="images/textindex64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/textindex16.png" genNodes="//@diagram/@topLevelNodes.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Text w Superscript" description="Create new Text w Superscript" largeIconPath="images/superscript64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/superscript16.png" genNodes="//@diagram/@topLevelNodes.0"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Text w Subscript" description="Create new Text w Subscript" largeIconPath="images/subscript64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/subscript16.png" genNodes="//@diagram/@topLevelNodes.1"/>
+      </groups>
+      <groups title="Custom Elements" collapse="true">
+        <entries xsi:type="gmfgen:ToolEntry" title="Picture" description="Create new Picture" largeIconPath="images/picture64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/picture16.png" genNodes="//@diagram/@topLevelNodes.15"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Shape" description="Create new Shape" largeIconPath="images/shape64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/shape16.png" genNodes="//@diagram/@topLevelNodes.16"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Link" description="Create new Link" largeIconPath="images/line64.png" smallIconPath="/org.chico.uclm.gettw.figures/images/line16.png" genNodes="//@diagram/@topLevelNodes.13"/>
+      </groups>
+    </palette>
+    <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="org.chico.uclm.gettw.diagram.general" name="Gettw Diagram">
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="org.chico.uclm.gettw.diagram.appearance" name="Appearance" kind="Appearance"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="org.chico.uclm.gettw.diagram.connections" name="Connections" kind="Connections"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="org.chico.uclm.gettw.diagram.printing" name="Printing" kind="Printing"/>
+      <children xsi:type="gmfgen:GenStandardPreferencePage" iD="org.chico.uclm.gettw.diagram.rulersAndGrid" name="Rulers And Grid" kind="RulersAndGrid"/>
+    </preferencePages>
+  </diagram>
+  <plugin printingEnabled="true">
+    <requiredPlugins>org.eclipse.gmf.tooling.runtime</requiredPlugins>
+    <requiredPlugins>org.eclipse.draw2d</requiredPlugins>
+    <requiredPlugins>org.eclipse.gmf.runtime.draw2d.ui</requiredPlugins>
+    <requiredPlugins>org.chico.uclm.gettw.figures</requiredPlugins>
+  </plugin>
+  <editor/>
+  <navigator>
+    <childReferences child="//@diagram"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.0"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.1"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.2"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.3"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.4"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.5"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.6"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.7"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.8"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.9"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.10"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.11"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.12"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.13"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.14"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.15"/>
+    <childReferences parent="//@diagram" child="//@diagram/@topLevelNodes.16"/>
+  </navigator>
+  <diagramUpdater/>
+  <propertySheet>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="appearance"/>
+    <tabs xsi:type="gmfgen:GenStandardPropertyTab" iD="diagram"/>
+    <tabs xsi:type="gmfgen:GenCustomPropertyTab" iD="domain" label="Core">
+      <filter xsi:type="gmfgen:TypeTabFilter">
+        <types>org.eclipse.gmf.runtime.notation.View</types>
+        <types>org.eclipse.gef.EditPart</types>
+        <generatedTypes>abstractNavigatorItem</generatedTypes>
+      </filter>
+    </tabs>
+  </propertySheet>
+  <domainGenModel href="gettw.genmodel#/"/>
+  <labelParsers extensibleViaService="true">
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@topLevelNodes.2/@labels.0/@modelFacet //@diagram/@topLevelNodes.3/@labels.0/@modelFacet //@diagram/@topLevelNodes.4/@labels.0/@modelFacet //@diagram/@topLevelNodes.5/@labels.0/@modelFacet //@diagram/@topLevelNodes.6/@labels.0/@modelFacet //@diagram/@topLevelNodes.7/@labels.0/@modelFacet //@diagram/@topLevelNodes.8/@labels.0/@modelFacet //@diagram/@topLevelNodes.9/@labels.0/@modelFacet //@diagram/@topLevelNodes.10/@labels.0/@modelFacet //@diagram/@topLevelNodes.11/@labels.0/@modelFacet //@diagram/@topLevelNodes.12/@labels.0/@modelFacet //@diagram/@topLevelNodes.13/@labels.0/@modelFacet //@diagram/@topLevelNodes.14/@labels.0/@modelFacet //@diagram/@topLevelNodes.15/@labels.0/@modelFacet //@diagram/@topLevelNodes.16/@labels.0/@modelFacet"/>
+  </labelParsers>
+  <contextMenus context="//@diagram">
+    <items xsi:type="gmfgen:LoadResourceAction"/>
+  </contextMenus>
+</gmfgen:GenEditorGenerator>

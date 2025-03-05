@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<!--
+
+-->
+<plugin>
+
+   <extension point="org.eclipse.team.core.fileTypes" id="repo-ftype">
+      <?gmfgen generated="true"?>
+      <fileTypes type="text" extension="gettw_diagram"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser" id="resource-factory">
+      <?gmfgen generated="true"?>
+      <parser
+         type="gettw_diagram"
+         class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory">
+      </parser>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors" id="gmf-editor">
+      <?gmfgen generated="true"?>
+      <editor
+         id="gettw.diagram.part.GettwDiagramEditorID"
+         name="%editorName"
+         icon="icons/obj16/GettwDiagramFile.gif"
+         extensions="gettw_diagram"
+         default="true"
+         class="gettw.diagram.part.GettwDiagramEditor"
+         matchingStrategy="gettw.diagram.part.GettwMatchingStrategy"
+         contributorClass="gettw.diagram.part.GettwDiagramActionBarContributor">
+      </editor>
+   </extension>
+   
+   <extension point="org.eclipse.ui.contexts" id="ui-context">
+      <?gmfgen generated="true"?>
+      <context
+         description="%context.description"
+         id="gettw.diagram.ui.diagramContext"
+         name="%context.name"
+         parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+      </context>
+   </extension>
+
+   <extension point="org.eclipse.ui.newWizards" id="creation-wizard">
+      <?gmfgen generated="true"?>
+  	  <wizard
+  	     name="%newWizardName"
+  	     icon="icons/obj16/GettwDiagramFile.gif"
+  	     category="org.eclipse.ui.Examples"
+  	     class="gettw.diagram.part.GettwCreationWizard"
+  	     id="gettw.diagram.part.GettwCreationWizardID">
+  	  	 <description>%newWizardDesc</description>  
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.popupMenus" id="init-diagram-action">
+      <?gmfgen generated="true"?>
+      <objectContribution
+            id="org.chico.uclm.gettw.diagram.InitDiagram"
+            nameFilter="*.gettw"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               label="%initDiagramActionLabel"
+               class="gettw.diagram.part.GettwInitDiagramFileAction"
+               menubarPath="additions"
+               enablesFor="1"
+               id="org.chico.uclm.gettw.diagram.InitDiagramAction">
+         </action>
+      </objectContribution>
+   </extension>
+	
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.action.globalActionHandlerProviders" id="global-actions">
+      <?gmfgen generated="true"?>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.DiagramGlobalActionHandlerProvider"
+         id="GettwPresentation">
+         <Priority name="Lowest"/>
+         <ViewId id="gettw.diagram.part.GettwDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="delete"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.DiagramEditPart">
+               <GlobalActionId actionId="save"/>
+            </ElementType>
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="save">
+               </GlobalActionId>
+            </ElementType>        
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.printing.render.providers.DiagramWithPrintGlobalActionHandlerProvider"
+         id="GettwPresentationPrint">
+         <Priority name="Lowest"/>
+         <ViewId id="gettw.diagram.part.GettwDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="print"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+         class="org.eclipse.gmf.runtime.diagram.ui.providers.ide.providers.DiagramIDEGlobalActionHandlerProvider"
+         id="GettwPresentationIDE">
+         <Priority name="Lowest"/>
+         <ViewId id="gettw.diagram.part.GettwDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="bookmark"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+      <GlobalActionHandlerProvider
+            class="org.eclipse.gmf.runtime.diagram.ui.render.providers.DiagramUIRenderGlobalActionHandlerProvider"
+            id="GettwRender">
+         <Priority name="Lowest"/>
+         <ViewId id="gettw.diagram.part.GettwDiagramEditorID">
+            <ElementType class="org.eclipse.gmf.runtime.diagram.ui.editparts.IGraphicalEditPart">
+               <GlobalActionId actionId="cut"/>
+               <GlobalActionId actionId="copy"/>
+               <GlobalActionId actionId="paste"/>
+            </ElementType>
+         </ViewId>
+      </GlobalActionHandlerProvider>
+   </extension>
+
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.markerNavigationProviders" id="markers-navigation">
+      <?gmfgen generated="true"?>
+      <MarkerNavigationProvider class="gettw.diagram.providers.GettwMarkerNavigationProvider">
+         <MarkerType name="org.chico.uclm.gettw.diagram.diagnostic"/>
+         <Priority name="Lowest"/>
+      </MarkerNavigationProvider>
+   </extension>
+
+   <extension id="diagnostic" name="Gettw Plugin problems" point="org.eclipse.core.resources.markers">
+      <?gmfgen generated="true"?>
+      <super type="org.eclipse.core.resources.problemmarker"/>
+      <super type="org.eclipse.gmf.runtime.common.ui.services.marker"/>
+      <persistent value="true"/>
+   </extension>   
+
+   <extension id="validationDecoratorProvider" name="ValidationDecorations" point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="gettw.diagram.providers.GettwValidationDecoratorProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.diagram.ui.editparts.IPrimaryEditPart(org.eclipse.gmf.runtime.diagram.ui)" id="PRIMARY_VIEW"/>
+         <context decoratorTargets="PRIMARY_VIEW"/>
+      </decoratorProvider>
+   </extension>
+
+   <extension point="org.eclipse.core.runtime.preferences" id="prefs">
+      <?gmfgen generated="true"?>
+      <initializer class="gettw.diagram.preferences.DiagramPreferenceInitializer"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.preferencePages" id="prefpages">
+      <?gmfgen generated="true"?>
+      <page
+            id="org.chico.uclm.gettw.diagram.general"
+            name="%prefpage.org.chico.uclm.gettw.diagram.general"
+            class="gettw.diagram.preferences.DiagramGeneralPreferencePage">
+      </page>
+      <page
+            id="org.chico.uclm.gettw.diagram.appearance"
+            name="%prefpage.org.chico.uclm.gettw.diagram.appearance"
+            category="org.chico.uclm.gettw.diagram.general"
+            class="gettw.diagram.preferences.DiagramAppearancePreferencePage">
+      </page>
+      <page
+            id="org.chico.uclm.gettw.diagram.connections"
+            name="%prefpage.org.chico.uclm.gettw.diagram.connections"
+            category="org.chico.uclm.gettw.diagram.general"
+            class="gettw.diagram.preferences.DiagramConnectionsPreferencePage">
+      </page>
+      <page
+            id="org.chico.uclm.gettw.diagram.printing"
+            name="%prefpage.org.chico.uclm.gettw.diagram.printing"
+            category="org.chico.uclm.gettw.diagram.general"
+            class="gettw.diagram.preferences.DiagramPrintingPreferencePage">
+      </page>
+      <page
+            id="org.chico.uclm.gettw.diagram.rulersAndGrid"
+            name="%prefpage.org.chico.uclm.gettw.diagram.rulersAndGrid"
+            category="org.chico.uclm.gettw.diagram.general"
+            class="gettw.diagram.preferences.DiagramRulersAndGridPreferencePage">
+      </page>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyContributor" id="prop-contrib">
+      <?gmfgen generated="true"?>
+      <propertyContributor
+            contributorId="org.chico.uclm.gettw.diagram"
+            labelProvider="gettw.diagram.sheet.GettwSheetLabelProvider">
+         <propertyCategory category="domain"/>
+         <propertyCategory category="visual"/>
+         <propertyCategory category="extra"/>
+      </propertyContributor>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertyTabs" id="proptabs">
+      <?gmfgen generated="true"?>   
+      <propertyTabs contributorId="org.chico.uclm.gettw.diagram">
+         <propertyTab
+             category="visual"
+             id="property.tab.AppearancePropertySection"
+             label="%tab.appearance"/>
+          <propertyTab
+             category="visual"
+             id="property.tab.DiagramPropertySection"
+             label="%tab.diagram"/>
+          <propertyTab
+             category="domain"
+             id="property.tab.domain"
+             label="%tab.domain"/>
+      </propertyTabs>
+   </extension>
+
+   <extension point="org.eclipse.ui.views.properties.tabbed.propertySections" id="propsections">
+      <?gmfgen generated="true"?>   
+      <propertySections contributorId="org.chico.uclm.gettw.diagram">
+         <propertySection id="property.section.ConnectorAppearancePropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ConnectionEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ConnectionAppearancePropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>
+         <propertySection id="property.section.ShapeColorAndFontPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.ShapeEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.ShapeColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection> 
+         <propertySection id="property.section.DiagramColorsAndFontsPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.appearance.DiagramColorsAndFontsPropertySection" 
+            tab="property.tab.AppearancePropertySection">
+         </propertySection>     
+         <propertySection id="property.section.RulerGridPropertySection" 
+            filter="org.eclipse.gmf.runtime.diagram.ui.properties.filters.DiagramEditPartPropertySectionFilter" 
+            class="org.eclipse.gmf.runtime.diagram.ui.properties.sections.grid.RulerGridPropertySection" 
+            tab="property.tab.DiagramPropertySection">
+         </propertySection>     
+         <propertySection
+            id="property.section.domain" 
+            tab="property.tab.domain"
+            class="gettw.diagram.sheet.GettwPropertySection">
+            <input type="org.eclipse.gmf.runtime.notation.View"/>
+            <input type="org.eclipse.gef.EditPart"/>
+            <input type="gettw.diagram.navigator.GettwAbstractNavigatorItem"/>
+         </propertySection>
+      </propertySections>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders" id="view-provider">
+      <?gmfgen generated="true"?>
+      <viewProvider class="gettw.diagram.providers.GettwViewProvider">
+         <Priority name="Lowest"/>
+         <object id="referencing-diagrams" class="org.eclipse.gmf.runtime.notation.Diagram">
+            <method name="getType()" value="gettw"/>
+         </object>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Gettw"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2018,2019,2020,2004,2005,2010,2011,2012,2013,2014,2015,2016,2017,2002,2021,2003,2001"/>
+      </viewProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders" id="ep-provider">
+      <?gmfgen generated="true"?>
+      <editpartProvider class="gettw.diagram.providers.GettwEditPartProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Diagram" id="generated-diagram">
+            <method name="getType()" value="Gettw"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
+            <method name="getType()" value="2018,2019,2020,2004,2005,2010,2011,2012,2013,2014,2015,2016,2017,2002,2021,2003,2001"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
+            <method name="getType()" value=""/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
+            <method name="getType()" value="5018,5019,5020,5004,5005,5010,5011,5012,5013,5014,5015,5016,5017,5002,5021,5003,5001"/>
+         </object>
+         <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
+            <method name="getType()" value=""/>
+         </object>
+         <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
+      </editpartProvider>
+   </extension>
+
+   
+   <extension point="org.eclipse.gmf.runtime.emf.ui.modelingAssistantProviders" id="modelassist-provider">
+      <?gmfgen generated="true"?>
+      <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfGETTWDiagramEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.GETTWDiagramEditPart" id="GETTWDiagram_1000"/>
+         <context elements="GETTWDiagram_1000"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfSuperscriptEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.SuperscriptEditPart" id="Superscript_2018"/>
+         <context elements="Superscript_2018"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfSubscriptEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.SubscriptEditPart" id="Subscript_2019"/>
+         <context elements="Subscript_2019"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfTextIndexEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.TextIndexEditPart" id="TextIndex_2020"/>
+         <context elements="TextIndex_2020"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfRectangleEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.RectangleEditPart" id="Rectangle_2004"/>
+         <context elements="Rectangle_2004"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfRoundedRectangleEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.RoundedRectangleEditPart" id="RoundedRectangle_2005"/>
+         <context elements="RoundedRectangle_2005"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfEllipseEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.EllipseEditPart" id="Ellipse_2010"/>
+         <context elements="Ellipse_2010"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfTriangleEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.TriangleEditPart" id="Triangle_2011"/>
+         <context elements="Triangle_2011"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfDiamondEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.DiamondEditPart" id="Diamond_2012"/>
+         <context elements="Diamond_2012"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfTriangleDownEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.TriangleDownEditPart" id="TriangleDown_2013"/>
+         <context elements="TriangleDown_2013"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfTriangleLeftEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.TriangleLeftEditPart" id="TriangleLeft_2014"/>
+         <context elements="TriangleLeft_2014"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfTriangleRightEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.TriangleRightEditPart" id="TriangleRight_2015"/>
+         <context elements="TriangleRight_2015"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfActorEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.ActorEditPart" id="Actor_2016"/>
+         <context elements="Actor_2016"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfPackageEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.PackageEditPart" id="Package_2017"/>
+         <context elements="Package_2017"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfCustomLinkEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.CustomLinkEditPart" id="CustomLink_2002"/>
+         <context elements="CustomLink_2002"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfTextEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.TextEditPart" id="Text_2021"/>
+         <context elements="Text_2021"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfPictureEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.PictureEditPart" id="Picture_2003"/>
+         <context elements="Picture_2003"/>
+      </modelingAssistantProvider>
+            <modelingAssistantProvider class="gettw.diagram.providers.assistants.GettwModelingAssistantProviderOfCustomShapeEditPart">
+         <Priority name="Lowest"/>
+         <object class="gettw.diagram.edit.parts.CustomShapeEditPart" id="CustomShape_2001"/>
+         <context elements="CustomShape_2001"/>
+      </modelingAssistantProvider>
+      
+   </extension>
+
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.iconProviders" id="icon-provider">
+      <?gmfgen generated="true"?>
+      <IconProvider class="gettw.diagram.providers.GettwIconProvider">
+         <Priority name="Low"/>
+      </IconProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders" id="parser-provider">
+      <?gmfgen generated="true"?>
+      <ParserProvider class="gettw.diagram.providers.GettwParserProvider">
+         <Priority name="Lowest"/>
+      </ParserProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders" id="decorator-provider">
+      <?gmfgen generated="true"?>
+      <decoratorProvider class="gettw.diagram.providers.GettwShortcutsDecoratorProvider">
+         <Priority name="Lowest"/>
+         <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
+            <method name="getType()" value="2018,2019,2020,2004,2005,2010,2011,2012,2013,2014,2015,2016,2017,2002,2021,2003,2001"/>
+         </object>
+         <context decoratorTargets="generated-top-nodes"/>
+      </decoratorProvider>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes" id="element-types">
+      <?gmfgen generated="true"?>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.GETTWDiagram_1000"
+               name="%metatype.name.GETTWDiagram_1000"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="GETTWDiagram"
+               edithelper="gettw.diagram.edit.helpers.GETTWDiagramEditHelper">
+            <param name="semanticHint" value="1000"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Superscript_2018"
+               name="%metatype.name.Superscript_2018"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Superscript"
+               edithelper="gettw.diagram.edit.helpers.SuperscriptEditHelper">
+            <param name="semanticHint" value="2018"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Subscript_2019"
+               name="%metatype.name.Subscript_2019"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Subscript"
+               edithelper="gettw.diagram.edit.helpers.SubscriptEditHelper">
+            <param name="semanticHint" value="2019"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.TextIndex_2020"
+               name="%metatype.name.TextIndex_2020"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="TextIndex"
+               edithelper="gettw.diagram.edit.helpers.TextIndexEditHelper">
+            <param name="semanticHint" value="2020"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Rectangle_2004"
+               name="%metatype.name.Rectangle_2004"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Rectangle"
+               edithelper="gettw.diagram.edit.helpers.RectangleEditHelper">
+            <param name="semanticHint" value="2004"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.RoundedRectangle_2005"
+               name="%metatype.name.RoundedRectangle_2005"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="RoundedRectangle"
+               edithelper="gettw.diagram.edit.helpers.RoundedRectangleEditHelper">
+            <param name="semanticHint" value="2005"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Ellipse_2010"
+               name="%metatype.name.Ellipse_2010"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Ellipse"
+               edithelper="gettw.diagram.edit.helpers.EllipseEditHelper">
+            <param name="semanticHint" value="2010"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Triangle_2011"
+               name="%metatype.name.Triangle_2011"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Triangle"
+               edithelper="gettw.diagram.edit.helpers.TriangleEditHelper">
+            <param name="semanticHint" value="2011"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Diamond_2012"
+               name="%metatype.name.Diamond_2012"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Diamond"
+               edithelper="gettw.diagram.edit.helpers.DiamondEditHelper">
+            <param name="semanticHint" value="2012"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.TriangleDown_2013"
+               name="%metatype.name.TriangleDown_2013"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="TriangleDown"
+               edithelper="gettw.diagram.edit.helpers.TriangleDownEditHelper">
+            <param name="semanticHint" value="2013"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.TriangleLeft_2014"
+               name="%metatype.name.TriangleLeft_2014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="TriangleLeft"
+               edithelper="gettw.diagram.edit.helpers.TriangleLeftEditHelper">
+            <param name="semanticHint" value="2014"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.TriangleRight_2015"
+               name="%metatype.name.TriangleRight_2015"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="TriangleRight"
+               edithelper="gettw.diagram.edit.helpers.TriangleRightEditHelper">
+            <param name="semanticHint" value="2015"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Actor_2016"
+               name="%metatype.name.Actor_2016"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Actor"
+               edithelper="gettw.diagram.edit.helpers.ActorEditHelper">
+            <param name="semanticHint" value="2016"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Package_2017"
+               name="%metatype.name.Package_2017"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Package"
+               edithelper="gettw.diagram.edit.helpers.PackageEditHelper">
+            <param name="semanticHint" value="2017"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.CustomLink_2002"
+               name="%metatype.name.CustomLink_2002"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="CustomLink"
+               edithelper="gettw.diagram.edit.helpers.CustomLinkEditHelper">
+            <param name="semanticHint" value="2002"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Text_2021"
+               name="%metatype.name.Text_2021"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Text"
+               edithelper="gettw.diagram.edit.helpers.TextEditHelper">
+            <param name="semanticHint" value="2021"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.Picture_2003"
+               name="%metatype.name.Picture_2003"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="Picture"
+               edithelper="gettw.diagram.edit.helpers.PictureEditHelper">
+            <param name="semanticHint" value="2003"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="gettw">
+         <metamodelType
+               id="org.chico.uclm.gettw.diagram.CustomShape_2001"
+               name="%metatype.name.CustomShape_2001"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="CustomShape"
+               edithelper="gettw.diagram.edit.helpers.CustomShapeEditHelper">
+            <param name="semanticHint" value="2001"/>
+         </metamodelType>
+      </metamodel>
+   </extension>
+
+   <extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings" id="element-types-bindings">
+      <?gmfgen generated="true"?>
+      <clientContext id="org.chico.uclm.gettw.diagram.TypeContext">
+         <enablement>
+            <test
+               property="org.eclipse.gmf.runtime.emf.core.editingDomain"
+               value="org.chico.uclm.gettw.diagram.EditingDomain"/>
+         </enablement>
+      </clientContext> 
+      <binding context="org.chico.uclm.gettw.diagram.TypeContext">
+         <elementType ref="org.chico.uclm.gettw.diagram.GETTWDiagram_1000"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Superscript_2018"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Subscript_2019"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.TextIndex_2020"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Rectangle_2004"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.RoundedRectangle_2005"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Ellipse_2010"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Triangle_2011"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Diamond_2012"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.TriangleDown_2013"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.TriangleLeft_2014"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.TriangleRight_2015"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Actor_2016"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Package_2017"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.CustomLink_2002"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Text_2021"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.Picture_2003"/>
+         <elementType ref="org.chico.uclm.gettw.diagram.CustomShape_2001"/>
+         <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
+      </binding>
+   </extension>
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isURIEditorInput">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="org.chico.uclm.gettw.diagram.URIEditorInputPropertyTester"
+           type="org.eclipse.emf.common.ui.URIEditorInput"
+           namespace="org.chico.uclm.gettw.diagram"
+           properties="isURIEditorInput"
+           class="gettw.diagram.part.GettwUriEditorInputTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.core.expressions.propertyTesters" id="navigator-proptest.isShortcut">
+      <?gmfgen generated="true"?>
+       <propertyTester
+           id="org.chico.uclm.gettw.diagram.ShortcutPropertyTester"
+           type="org.eclipse.gmf.runtime.notation.View"
+           namespace="org.chico.uclm.gettw.diagram"
+           properties="isShortcut"
+           class="gettw.diagram.part.GettwShortcutPropertyTester">
+       </propertyTester>
+   </extension>
+
+	   <extension point="org.eclipse.ui.navigator.viewer" id="navigator-viewbinding">
+      <?gmfgen generated="true"?>
+      <viewerContentBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <contentExtension pattern="org.chico.uclm.gettw.diagram.resourceContent"/>
+			<contentExtension pattern="org.chico.uclm.gettw.diagram.domainResourceContent"/>
+            <contentExtension pattern="org.chico.uclm.gettw.diagram.navigatorLinkHelper"/>
+         </includes>
+      </viewerContentBinding>
+      <viewerActionBinding viewerId="org.eclipse.ui.navigator.ProjectExplorer">
+         <includes>
+            <actionExtension pattern="org.chico.uclm.gettw.diagram.navigatorActionProvider"/>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+   <extension point="org.eclipse.ui.navigator.navigatorContent" id="navigator-content">
+      <?gmfgen generated="true"?>
+      <navigatorContent
+            id="org.chico.uclm.gettw.diagram.resourceContent" 
+            name="%navigatorContentName" 
+            priority="normal" 
+            contentProvider="gettw.diagram.navigator.GettwNavigatorContentProvider" 
+            labelProvider="gettw.diagram.navigator.GettwNavigatorLabelProvider"
+            icon="icons/obj16/GettwDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="gettw_diagram"/>
+               </and>
+               <instanceof value="gettw.diagram.navigator.GettwAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="org.chico.uclm.gettw.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <or>
+         	   <instanceof value="gettw.diagram.navigator.GettwAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="org.chico.uclm.gettw.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </possibleChildren>
+         <commonSorter 
+               id="org.chico.uclm.gettw.diagram.navigatorSorter" 
+               class="gettw.diagram.navigator.GettwNavigatorSorter">
+            <parentExpression>
+               <or>
+	              <and>
+    	             <instanceof value="org.eclipse.core.resources.IFile"/>
+        	         <test property="org.eclipse.core.resources.extension" value="gettw_diagram"/>
+                  </and>
+                  <instanceof value="gettw.diagram.navigator.GettwAbstractNavigatorItem"/>
+               </or>
+            </parentExpression>
+         </commonSorter>
+      </navigatorContent>
+      <navigatorContent
+            id="org.chico.uclm.gettw.diagram.domainResourceContent" 
+            name="%domainNavigatorContentName" 
+            priority="normal" 
+            contentProvider="gettw.diagram.navigator.GettwDomainNavigatorContentProvider" 
+            labelProvider="gettw.diagram.navigator.GettwDomainNavigatorLabelProvider"
+            icon="icons/obj16/GettwDiagramFile.gif"
+            activeByDefault="true">
+         <triggerPoints>
+            <or>
+	           <and>
+    	          <instanceof value="org.eclipse.core.resources.IFile"/>
+        	      <test property="org.eclipse.core.resources.extension" value="gettw"/>
+               </and>
+               <instanceof value="gettw.diagram.navigator.GettwDomainNavigatorItem"/>
+            </or>
+         </triggerPoints>
+         <possibleChildren>
+            <instanceof value="gettw.diagram.navigator.GettwDomainNavigatorItem"/>
+         </possibleChildren>
+      </navigatorContent>
+      <actionProvider
+            id="org.chico.uclm.gettw.diagram.navigatorActionProvider"
+            class="gettw.diagram.navigator.GettwNavigatorActionProvider">
+         <enablement>
+            <or>
+               <instanceof value="gettw.diagram.navigator.GettwAbstractNavigatorItem"/>
+           	   <adapt type="org.eclipse.gmf.runtime.notation.View">
+           	      <test property="org.chico.uclm.gettw.diagram.isShortcut"/>
+           	   </adapt>
+            </or>
+         </enablement>
+      </actionProvider>
+   </extension>
+   
+	   <extension point="org.eclipse.ui.navigator.linkHelper" id="navigator-linkhelper">
+      <?gmfgen generated="true"?>
+      <linkHelper
+            id="org.chico.uclm.gettw.diagram.navigatorLinkHelper"
+            class="gettw.diagram.navigator.GettwNavigatorLinkHelper">
+         <editorInputEnablement>
+            <and>
+               <instanceof value="org.eclipse.emf.common.ui.URIEditorInput"/>
+               <test property="org.chico.uclm.gettw.diagram.isURIEditorInput"/>
+            </and>
+         </editorInputEnablement>
+         <selectionEnablement>
+            <instanceof value="gettw.diagram.navigator.GettwAbstractNavigatorItem"/>
+         </selectionEnablement>
+      </linkHelper>
+   </extension>
+   <extension point="org.eclipse.ui.commands" id="update-cmd">
+      <?gmfgen generated="true"?>
+      <command
+         categoryId="org.eclipse.ui.category.edit"
+         defaultHandler="gettw.diagram.part.GettwDiagramUpdateCommand"
+         description="%update.diagram.description"
+         id="gettw.diagram.updateDiagram"
+         name="%update.diagram.name"/>
+   </extension>
+   
+   <extension point="org.eclipse.ui.bindings" id="update-cmd-binding">
+      <?gmfgen generated="true"?>
+      <key 
+         commandId="gettw.diagram.updateDiagram"
+         contextId="gettw.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="F5"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.menus" id="context-menus">
+      <?gmfgen generated="true"?>
+      <!-- menuContribution locationURI="menu:org.eclipse.ui.main.menu?after=">
+      </menuContribution>
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?after=">
+      </menuContribution -->
+      <menuContribution locationURI="popup:org.eclipse.gmf.runtime.diagram.ui.DiagramEditorContextMenu">
+         <command commandId="org.chico.uclm.gettw.diagram.LoadResourceAction">
+            <visibleWhen>
+               <and>
+                  <with variable="activePartId"><equals value="gettw.diagram.part.GettwDiagramEditorID"/></with>
+                  <with variable="selection"><iterate ifEmpty="false"> 
+                     <instanceof value="gettw.diagram.edit.parts.GETTWDiagramEditPart"/>
+                  </iterate></with>
+               </and>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+
+   <extension point="org.eclipse.ui.commands" id="menu-commands">
+      <?gmfgen generated="true"?>
+      <category id="gettw.diagram.part.GettwDiagramEditorID" name="%cmdcategory.name" description="%cmdcategory.desc"/>
+      <command id="org.chico.uclm.gettw.diagram.LoadResourceAction"
+         name="Load Resource"
+         categoryId="gettw.diagram.part.GettwDiagramEditorID"
+         defaultHandler="gettw.diagram.part.LoadResourceAction"/>
+   </extension>
+
+   <extension point="org.eclipse.ui.handlers" id="menu-handlers">
+      <?gmfgen generated="true"?>
+   </extension>
+
+   <!-- optionally, specify keybindings -->
+</plugin>

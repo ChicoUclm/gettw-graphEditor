@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="ASCII"?>
+<gmfgraph:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmfgraph="http://www.eclipse.org/gmf/2006/GraphicalDefinition" name="gettw">
+  <figures name="Default">
+    <descriptors name="TextFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TextFigure" qualifiedClassName="org.chico.uclm.gettw.figures.TextFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TextLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TextLabelFigure" text="Text"/>
+    </descriptors>
+    <descriptors name="SuperscriptFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="SuperscriptFigure" qualifiedClassName="org.chico.uclm.gettw.figures.SuperscriptFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="SuperscriptLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SuperscriptLabelFigure" text="Superscript"/>
+    </descriptors>
+    <descriptors name="SubscriptFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="SubscriptFigure" qualifiedClassName="org.chico.uclm.gettw.figures.SubscriptFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="SubscriptLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="SubscriptLabelFigure" text="Subscript"/>
+    </descriptors>
+    <descriptors name="TextIndexFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TextIndexFigure" qualifiedClassName="org.chico.uclm.gettw.figures.TextIndexFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TextIndexLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TextIndexLabelFigure" text="TextIndex"/>
+    </descriptors>
+    <descriptors name="RectangleFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="RectangleFigure" qualifiedClassName="org.chico.uclm.gettw.figures.RectangleFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RectangleLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RectangleLabelFigure" text="Rectangle"/>
+    </descriptors>
+    <descriptors name="RoundedRectangleFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="RoundedRectangleFigure" qualifiedClassName="org.chico.uclm.gettw.figures.RoundedRectangleFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="RoundedRectangleLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="RoundedRectangleLabelFigure" text="RoundedRectangle"/>
+    </descriptors>
+    <descriptors name="EllipseFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="EllipseFigure" qualifiedClassName="org.chico.uclm.gettw.figures.EllipseFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="EllipseLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="EllipseLabelFigure" text="Ellipse"/>
+    </descriptors>
+    <descriptors name="TriangleFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TriangleFigure" qualifiedClassName="org.chico.uclm.gettw.figures.TriangleFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TriangleLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TriangleLabelFigure" text="Triangle"/>
+    </descriptors>
+    <descriptors name="DiamondFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="DiamondFigure" qualifiedClassName="org.chico.uclm.gettw.figures.DiamondFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="DiamondLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="DiamondLabelFigure" text="Diamond"/>
+    </descriptors>
+    <descriptors name="TriangleDownFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TriangleDownFigure" qualifiedClassName="org.chico.uclm.gettw.figures.TriangleDownFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TriangleDownLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TriangleDownLabelFigure" text="TriangleDown"/>
+    </descriptors>
+    <descriptors name="TriangleLeftFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TriangleLeftFigure" qualifiedClassName="org.chico.uclm.gettw.figures.TriangleLeftFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TriangleLeftLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TriangleLeftLabelFigure" text="TriangleLeft"/>
+    </descriptors>
+    <descriptors name="TriangleRightFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="TriangleRightFigure" qualifiedClassName="org.chico.uclm.gettw.figures.TriangleRightFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="TriangleRightLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="TriangleRightLabelFigure" text="TriangleRight"/>
+    </descriptors>
+    <descriptors name="ActorFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="ActorFigure" qualifiedClassName="org.chico.uclm.gettw.figures.ActorFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="ActorLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="ActorLabelFigure" text="Actor"/>
+    </descriptors>
+    <descriptors name="PackageFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="PackageFigure" qualifiedClassName="org.chico.uclm.gettw.figures.PackageFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="PackageLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="PackageLabelFigure" text="Package"/>
+    </descriptors>
+    <descriptors name="PictureFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="PictureFigure" qualifiedClassName="org.chico.uclm.gettw.figures.PictureFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="PictureLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="PictureLabelFigure" text="Picture"/>
+    </descriptors>
+    <descriptors name="CustomShapeFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomShapeFigure" qualifiedClassName="org.chico.uclm.gettw.figures.ShapeFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="CustomShapeLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CustomShapeLabelFigure" text="CustomShape"/>
+    </descriptors>
+    <descriptors name="CustomLinkFigure">
+      <actualFigure xsi:type="gmfgraph:CustomFigure" name="CustomLinkFigure" qualifiedClassName="org.chico.uclm.gettw.figures.LinkFigure">
+        <preferredSize dx="64" dy="64"/>
+      </actualFigure>
+    </descriptors>
+    <descriptors name="CustomLinkLabelFigure">
+      <actualFigure xsi:type="gmfgraph:Label" name="CustomLinkLabelFigure" text="CustomLink"/>
+    </descriptors>
+  </figures>
+  <nodes name="Text" figure="TextFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Superscript" figure="SuperscriptFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Subscript" figure="SubscriptFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="TextIndex" figure="TextIndexFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Rectangle" figure="RectangleFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="RoundedRectangle" figure="RoundedRectangleFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Ellipse" figure="EllipseFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Triangle" figure="TriangleFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Diamond" figure="DiamondFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="TriangleDown" figure="TriangleDownFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="TriangleLeft" figure="TriangleLeftFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="TriangleRight" figure="TriangleRightFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Actor" figure="ActorFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Package" figure="PackageFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="Picture" figure="PictureFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="CustomShape" figure="CustomShapeFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <nodes name="CustomLink" figure="CustomLinkFigure">
+    <facets xsi:type="gmfgraph:DefaultSizeFacet">
+      <defaultSize dx="64" dy="64"/>
+    </facets>
+  </nodes>
+  <labels name="TextLabel" figure="TextLabelFigure" elementIcon="false"/>
+  <labels name="SuperscriptLabel" figure="SuperscriptLabelFigure" elementIcon="false"/>
+  <labels name="SubscriptLabel" figure="SubscriptLabelFigure" elementIcon="false"/>
+  <labels name="TextIndexLabel" figure="TextIndexLabelFigure" elementIcon="false"/>
+  <labels name="RectangleLabel" figure="RectangleLabelFigure" elementIcon="false"/>
+  <labels name="RoundedRectangleLabel" figure="RoundedRectangleLabelFigure" elementIcon="false"/>
+  <labels name="EllipseLabel" figure="EllipseLabelFigure" elementIcon="false"/>
+  <labels name="TriangleLabel" figure="TriangleLabelFigure" elementIcon="false"/>
+  <labels name="DiamondLabel" figure="DiamondLabelFigure" elementIcon="false"/>
+  <labels name="TriangleDownLabel" figure="TriangleDownLabelFigure" elementIcon="false"/>
+  <labels name="TriangleLeftLabel" figure="TriangleLeftLabelFigure" elementIcon="false"/>
+  <labels name="TriangleRightLabel" figure="TriangleRightLabelFigure" elementIcon="false"/>
+  <labels name="ActorLabel" figure="ActorLabelFigure" elementIcon="false"/>
+  <labels name="PackageLabel" figure="PackageLabelFigure" elementIcon="false"/>
+  <labels name="PictureLabel" figure="PictureLabelFigure" elementIcon="false"/>
+  <labels name="CustomShapeLabel" figure="CustomShapeLabelFigure" elementIcon="false"/>
+  <labels name="CustomLinkLabel" figure="CustomLinkLabelFigure" elementIcon="false"/>
+</gmfgraph:Canvas>

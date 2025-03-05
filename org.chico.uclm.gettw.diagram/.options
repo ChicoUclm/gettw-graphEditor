@@ -1,0 +1,7 @@
+# Tracing options for the org.chico.uclm.gettw.diagram plug-in
+
+# Common issues
+org.chico.uclm.gettw.diagram/debug=false
+
+# Visual IDs
+org.chico.uclm.gettw.diagram/debug/visualID=false

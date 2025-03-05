@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GETTWDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="gettw">
+  <elements xsi:type="CustomShape" id_="circle 1" shape="Circle" text="+" color="lightgreen"/>
+  <elements xsi:type="CustomShape" id_="square 1" shape="Square" text="Z" color="lightgreen" sup_sub_indexes="true" text_superscript="-1"/>
+  <elements xsi:type="TriangleRight" id_="triangle right 1" color="green"/>
+  <elements xsi:type="Text" id_="x[n]" text="x[n]"/>
+  <elements xsi:type="Text" id_="x[n-N]" text="x[n-N]"/>
+  <elements xsi:type="Text" id_="y[n]" text="y[n]"/>
+  <elements xsi:type="Text" id_="w[n]" text="w[n]"/>
+  <elements xsi:type="Subscript" id_="a0" text="a" subscript="0"/>
+  <elements xsi:type="Subscript" id_="b0" text="b" subscript="0"/>
+  <elements xsi:type="CustomLink" id_="link"/>
+  <elements xsi:type="CustomLink" id_="link2 - toArrowHead" toArrowShape="Standard"/>
+  <elements xsi:type="CustomLink" id_="link3 - dashed" isDashed="true"/>
+</GETTWDiagram>

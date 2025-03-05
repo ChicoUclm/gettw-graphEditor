@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="" modelDirectory="/org.chico.uclm.gettw/src" modelPluginID="org.chico.uclm.gettw"
+    modelName="Gettw" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>gettw.emf</foreignModel>
+  <genPackages prefix="Gettw" disposableProviderFactory="true" ecorePackage="gettw.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="gettw.ecore#//Shapes">
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/None"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Ellipse"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Rectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Square"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Triangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Actor"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ACvoltageSource"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/AndGate"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Arrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/AsteriskLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/BarH"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/BarV"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Border"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Buffer"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Capacitor"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Card"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Chevron"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Circle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/CircleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Clock"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cloud"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Club"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cone1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cone2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/CreateRequest"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cube1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cube2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Curve1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Curve2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Curve3"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Curve4"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cylinder1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cylinder2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cylinder3"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Cylinder4"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Database"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DataStorage"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DCvoltageSource"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Decagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Diamond"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Diode"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DiskStorage"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Display"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DividedEvent"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DividedProcess"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Document"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Dodecagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DoubleArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/DoubleEndArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ExternalOrganization"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ExternalProcess"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/EightPointedStar"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/EightPointedBurst"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/File"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/FivePointedBurst"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/FivePointedStar"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Fragile"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/FramedRectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/GenderMale"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/GenderFemale"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Ground"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Heart"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Hexagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Heptagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/HourGlass"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/IBeamArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Inductor"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/InternalStorage"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Interrupt"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Inverter"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Junction"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Lightning"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Line1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Line2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LinedDocument"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LineH"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LineV"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicAnd"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicFalsity"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicForAll"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicIff"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicImplies"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicIntersect"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicIsDefinedAs"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicNot"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicOr"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicThereExists"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicTruth"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicUnion"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/LogicXor"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/MinusLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/MultiDocument"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/MultiProcess"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/NandGate"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/NinePointedBurst"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/NinePointedStar"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Nonagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/NorGate"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/NotAllowed"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Octagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/OrGate"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Parallelogram"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Peace"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Pentagon"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Pie"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/PiePiece"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/PlusLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Pointer"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Prism1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Prism2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Procedure"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Process"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Pyramid1"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Pyramid2"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Resistor"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Ring"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/RoundedPointer"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/RoundedRectangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/SevenPointedBurst"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/SevenPointedStar"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/SixPointedBurst"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/SixPointedStar"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Spade"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/SplitEndArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/StopSign"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/SquareArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/TenPointedBurst"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/TenPointedStar"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ThickCross"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ThickX"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ThinCross"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/ThinX"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/TriangleRight"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/TriangleDown"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/TriangleLeft"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/Trapezoid"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/YinYang"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/XLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/XnorGate"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Shapes/XorGate"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="gettw.ecore#//ArrowHeads">
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/None"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Standard"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/AccelerationArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackSlash"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Backward"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardBoomerang"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardCircleFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardCircleLineFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardDoubleFeathers"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardFeather"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardHalfTriangleBottom"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardHalfTriangleTop"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardLineFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardOpenTriangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardOppenTriangleBottom"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardOpenTriangleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardOpenTriangleTop"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardSemiCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardTriangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardTripleFeathers"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BackwardV"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BigEndArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Block"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Boomerang"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/BoxArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Chevron"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Circle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/CircleEndedArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/CircleFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/CircleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/CircleLineFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/ConcaveTailArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Diamond"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DiamondCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DoubleBackSlash"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DoubleFeathers"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DoubleForwardSlash"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DoubleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DoubleLineCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DoubleTriangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/DynamicWidthArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/EquilibriumArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/FastForward"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Feather"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Fork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/ForwardSemiCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/ForwardSlack"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/HalfArrowTop"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/HalfArrowBottom"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/HalfTriangleBottom"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/HalfTriangleTop"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Kite"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Line"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/LineCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/LineFork"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/NormalArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpenRightTriangleTop"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpenRightTriangleBottom"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpenTriangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpenTriangleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpenTriangleTop"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpenTriangleBottom"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/OpposingDirectionDoubleArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/PartialDoubleTriangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/PentagonArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/PlusCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/RoundedTriangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/SidewaysV"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/SimpleArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/StretchedDiamond"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/StretchedChevron"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TailedNormalArrow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/Triangle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TriangleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TripleBackSlash"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TripleFeathers"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TripleForwardSlash"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TripleLine"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/TripleLineCircle"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//ArrowHeads/X"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="gettw.ecore#//Colors">
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/black"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/blue"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/lightblue"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/darkblue"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/gray"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/lightgray"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/darkgray"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/green"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/lightgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/darkgreen"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/orange"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/lightorange"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/darkorange"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/pink"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/purple"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/red"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/lightred"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/darkred"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/transparent"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/yellow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/lightyellow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/darkyellow"/>
+      <genEnumLiterals ecoreEnumLiteral="gettw.ecore#//Colors/white"/>
+    </genEnums>
+    <genClasses ecoreClass="gettw.ecore#//GETTWDiagram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gettw.ecore#//GETTWDiagram/elements"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="gettw.ecore#//GraphElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//GraphElement/id_"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Text">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Text/text"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Superscript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Superscript/superscript"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Subscript">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Subscript/subscript"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//TextIndex">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//TextIndex/subscript"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//TextIndex/superscript"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Shape">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Shape/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Shape/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Shape/stroke"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Shape/strokeWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Shape/editable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Shape/textIsHeader"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Rectangle">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Rectangle/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//RoundedRectangle">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//RoundedRectangle/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Ellipse">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Ellipse/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Triangle">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Triangle/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Diamond">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Diamond/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//TriangleDown">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//TriangleDown/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//TriangleLeft">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//TriangleLeft/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//TriangleRight">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//TriangleRight/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Actor">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Actor/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Package">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Package/shape"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//Link"/>
+    <genClasses ecoreClass="gettw.ecore#//Picture">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Picture/source_url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Picture/width"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Picture/height"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//Picture/text"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//CustomShape">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/shape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/color"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/stroke"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/strokeWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/sup_sub_indexes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/text_subscript"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/text_superscript"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/editable"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomShape/textIsHeader"/>
+    </genClasses>
+    <genClasses ecoreClass="gettw.ecore#//CustomLink">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/linkStrokeColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/linkStrokeWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/fromArrowShape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/fromArrowColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/fromArrowStrokeColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/fromArrowStrokeWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/toArrowShape"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/toArrowColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/toArrowStrokeColor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/toArrowStrokeWidth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/isDashed"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gettw.ecore#//CustomLink/text"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace:TraceModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:trace="http://www.eclipse.org/gmf/2006/Trace">
+  <nodeTraces
+      visualID="2001"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'CustomShape') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5001"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2002"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'CustomLink') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5002"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2003"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Picture') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5003"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2004"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Rectangle') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5004"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2005"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'RoundedRectangle') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5005"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2010"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Ellipse') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5010"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2011"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Triangle') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5011"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2012"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Diamond') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5012"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2013"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'TriangleDown') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5013"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2014"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'TriangleLeft') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5014"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2015"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'TriangleRight') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5015"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2016"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Actor') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5016"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2017"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Package') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5017"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2018"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Superscript') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5018"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2019"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Subscript') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5019"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2020"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'TextIndex') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5020"
+        queryText="true"/>
+  </nodeTraces>
+  <nodeTraces
+      visualID="2021"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'Text') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'gettw' and _eClass_.name = 'GETTWDiagram') and _containmentMF_.name = 'elements')">
+    <nodeLabelTraces
+        visualID="5021"
+        queryText="true"/>
+  </nodeTraces>
+</trace:TraceModel>
