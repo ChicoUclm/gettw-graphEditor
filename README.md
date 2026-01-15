@@ -11,8 +11,8 @@ To begin using GETTW, you must set up the Eclipse Modeling environment to access
 ### Prerequisites
 
 * **Eclipse IDE** with:
-  * Eclipse Epsilon
-  * EMF
+  * Eclipse Epsilon (https://eclipse.dev/epsilon/download/)
+  * Emfatic (https://eclipse.dev/emfatic/download/)
 * **Java Development Kit (JDK)**
 
 ### Core Workflow
@@ -23,7 +23,7 @@ To begin using GETTW, you must set up the Eclipse Modeling environment to access
 | **2. Configure** | Set properties for each element (Color, Size, Stroke, Text) via the Properties view. | Customizes the visual appearance and constraints of the final editor. |
 | **3. Validate** | When creating/editing a GETTW model, click 'Edit/Validate'. | Ensures the model adheres to all defined constraints in the EVL file before generation. |
 | **4. Generate** | Run the **EGL** transformation script. | Automatically transforms the Eclipse model into HTML, CSS, and JavaScript code into the GETTW_Base directory. |
-| **5. Collaborate** | Deploy the generated files. | The output connects to a **Glitch/TogetherJS server** to enable real-time collaboration across devices. |
+| **5. Collaborate** | Deploy the generated files. | The output connects to a Glitch/TogetherJS server to enable real-time collaboration across devices. |
 
 ## Key Technologies
 
@@ -32,7 +32,7 @@ GETTW relies on the **Epsilon** family of languages for model management and mod
 | Category | Technology | Function |
 | :--- | :--- | :--- |
 | **Modeling Foundation** | Eclipse EMF & GMF | Provides the core framework for defining the editor's meta-model and the visual drag-and-drop design interface. |
-| **Metamodeling** | Emfatic language | Used to declaratively define the abstract syntax (entities like *Shape, Link, Picture*) of the GETTW system. |
+| **Metamodelling** | Emfatic language | Used to declaratively define the abstract syntax (entities like *Shape, Link, Picture*) of the GETTW system. |
 | **Code Generation** | EGL (Epsilon Generation Language) | Template language used for Model-to-Text (M2T) transformations, converting the design model into web code (HTML/JS). |
 | **Visualization** | GoJS | A powerful JavaScript library used in the generated output to render interactive diagrams and multitouch gestures. |
 | **Collaboration** | TogetherJS and Glitch | Provides the real-time synchronization layer, allowing multiple users to edit diagrams simultaneously via HTTP requests. |
